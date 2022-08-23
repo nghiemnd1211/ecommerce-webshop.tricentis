@@ -1,0 +1,9 @@
+test\JSExecutor.class
+test\MultiWindowsHandle.class
+test\iFrameHandle.class
+test\DropdownHandle.class
+test\CheckboxHandle.class
+test\LoginForm.class
+drivers\DriverFactory.class
+test\JSAlert.class
+drivers\PageController.class
