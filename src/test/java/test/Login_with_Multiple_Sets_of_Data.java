@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import utils.DriverFactory;
 
 public class Login_with_Multiple_Sets_of_Data {
-    @Test(dataProvider = "loginData")
+    @Test(dataProvider = "loginData",description = "login with multiple data set without import data file")
     public void login(String scenario, String username, String password) {
         System.out.println(username + "\t" + password);
         WebDriver driver = DriverFactory.getChromedriver();

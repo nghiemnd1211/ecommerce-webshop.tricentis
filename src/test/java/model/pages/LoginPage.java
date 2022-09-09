@@ -1,5 +1,6 @@
 package model.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,19 +17,21 @@ public class LoginPage {
         public LoginPage(WebDriver driver) {
                 this.driver = driver;
         }
-
+        @Step("Input username as {username}")
         public LoginPage inputUsername(String username) {
                 WebElement usernameElm = driver.findElement(usernameSelector);
                 usernameElm.sendKeys(username);
                 return this;
         }
 
+        @Step("Input password as {password}")
         public LoginPage inputPassword(String password) {
                 WebElement passwordElm = driver.findElement(passwordSelector);
                 passwordElm.sendKeys(password);
                 return this;
         }
 
+        @Step("Click on the Login button")
         public void clickSubmitBtn() {
                 WebElement loginBtn = driver.findElement(loginBtnSelector);
                 loginBtn.click();

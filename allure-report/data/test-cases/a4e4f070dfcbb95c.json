@@ -1,0 +1,62 @@
+{
+  "uid" : "a4e4f070dfcbb95c",
+  "name" : "Login_with_Invalid_Password",
+  "fullName" : "test.CaseByCase.Login_Invalid_Password.Login_with_Invalid_Password",
+  "historyId" : "9efb97c332387729821c6b8846c70b11",
+  "time" : {
+    "start" : 1662194859975,
+    "stop" : 1662194867570,
+    "duration" : 7595
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.CaseByCase.Login_Invalid_Password"
+  }, {
+    "name" : "testClass",
+    "value" : "test.CaseByCase.Login_Invalid_Password"
+  }, {
+    "name" : "testMethod",
+    "value" : "Login_with_Invalid_Password"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Smoke Test"
+  }, {
+    "name" : "suite",
+    "value" : "Login Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.CaseByCase.Login_Invalid_Password"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-4QFJKR4E"
+  }, {
+    "name" : "thread",
+    "value" : "17268@LAPTOP-4QFJKR4E.TestNG-tests-1(20)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a4e4f070dfcbb95c.json",
+  "parameterValues" : [ ]
+}

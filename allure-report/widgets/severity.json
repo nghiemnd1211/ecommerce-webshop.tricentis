@@ -1,0 +1,91 @@
+[ {
+  "uid" : "46ac4801b84b7ea2",
+  "name" : "login with multiple data set without import data file",
+  "time" : {
+    "start" : 1662197869352,
+    "stop" : 1662197875268,
+    "duration" : 5916
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccff3818cd1034d3",
+  "name" : "TestLoginPass",
+  "time" : {
+    "start" : 1662194842277,
+    "stop" : 1662194853589,
+    "duration" : 11312
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d119f133c999fedb",
+  "name" : "Login_with_invalid_Username",
+  "time" : {
+    "start" : 1662194853499,
+    "stop" : 1662194859970,
+    "duration" : 6471
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4e4f070dfcbb95c",
+  "name" : "Login_with_Invalid_Password",
+  "time" : {
+    "start" : 1662194859975,
+    "stop" : 1662194867570,
+    "duration" : 7595
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf7c46d62dc2d59a",
+  "name" : "Login by using data set",
+  "time" : {
+    "start" : 1662197685543,
+    "stop" : 1662197692097,
+    "duration" : 6554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4709d75efb0a56fc",
+  "name" : "Login by using data set",
+  "time" : {
+    "start" : 1662197692112,
+    "stop" : 1662197698487,
+    "duration" : 6375
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8b3a6ce4cf6e03d",
+  "name" : "Login by using data set",
+  "time" : {
+    "start" : 1662197672988,
+    "stop" : 1662197685308,
+    "duration" : 12320
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4d7e8db1a0842cd",
+  "name" : "login with multiple data set without import data file",
+  "time" : {
+    "start" : 1662197875279,
+    "stop" : 1662197881255,
+    "duration" : 5976
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6292e8673b92116f",
+  "name" : "login with multiple data set without import data file",
+  "time" : {
+    "start" : 1662197859190,
+    "stop" : 1662197869156,
+    "duration" : 9966
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

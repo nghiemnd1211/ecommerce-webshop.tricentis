@@ -1,0 +1,204 @@
+{
+  "uid" : "4709d75efb0a56fc",
+  "name" : "Login by using data set",
+  "fullName" : "test.sdetpro.TestDataProvider.login",
+  "historyId" : "95eac292c87d9f02147cf9f1dc08f892",
+  "time" : {
+    "start" : 1662197692112,
+    "stop" : 1662197698487,
+    "duration" : 6375
+  },
+  "description" : "Apply DATA DRIVEN on feature Login",
+  "descriptionHtml" : "<p>Apply DATA DRIVEN on feature Login</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Apply DATA DRIVEN on feature Login",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Input username as tomsmith",
+      "time" : {
+        "start" : 1662197697058,
+        "stop" : 1662197697148,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "username",
+        "value" : "tomsmith"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Input password as 123456.0",
+      "time" : {
+        "start" : 1662197697148,
+        "stop" : 1662197697202,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "123456.0"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click on the Login button",
+      "time" : {
+        "start" : 1662197697202,
+        "stop" : 1662197697863,
+        "duration" : 661
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.sdetpro.TestDataProvider"
+  }, {
+    "name" : "testClass",
+    "value" : "test.sdetpro.TestDataProvider"
+  }, {
+    "name" : "testMethod",
+    "value" : "login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.sdetpro.TestDataProvider"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-4QFJKR4E"
+  }, {
+    "name" : "thread",
+    "value" : "9904@LAPTOP-4QFJKR4E.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "tomsmith"
+  }, {
+    "name" : "arg1",
+    "value" : "123456.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3ca00b762b2f2954",
+      "status" : "passed",
+      "time" : {
+        "start" : 1662197535688,
+        "stop" : 1662197541964,
+        "duration" : 6276
+      }
+    }, {
+      "uid" : "8054cc96515d5dd1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1662196867269,
+        "stop" : 1662196873792,
+        "duration" : 6523
+      }
+    }, {
+      "uid" : "4087db58dcc15b54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1662196695378,
+        "stop" : 1662196701644,
+        "duration" : 6266
+      }
+    }, {
+      "uid" : "38cfeb1cfba16322",
+      "status" : "passed",
+      "time" : {
+        "start" : 1662196625956,
+        "stop" : 1662196632258,
+        "duration" : 6302
+      }
+    }, {
+      "uid" : "d5d6c3a144a4250a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1662195687171,
+        "stop" : 1662195693444,
+        "duration" : 6273
+      }
+    }, {
+      "uid" : "aa9f6dd69693303a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1662195618302,
+        "stop" : 1662195625731,
+        "duration" : 7429
+      }
+    }, {
+      "uid" : "cac43f6bd582b772",
+      "status" : "passed",
+      "time" : {
+        "start" : 1662195331051,
+        "stop" : 1662195337456,
+        "duration" : 6405
+      }
+    }, {
+      "uid" : "e669d89c4d4c12e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1662195126278,
+        "stop" : 1662195132375,
+        "duration" : 6097
+      }
+    }, {
+      "uid" : "875c09d0dc8cdd6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1662194143206,
+        "stop" : 1662194149524,
+        "duration" : 6318
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4709d75efb0a56fc.json",
+  "parameterValues" : [ "tomsmith", "123456.0" ]
+}
