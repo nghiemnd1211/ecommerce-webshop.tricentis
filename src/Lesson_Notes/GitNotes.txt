@@ -1,0 +1,4 @@
+# remove remote resources:
+git rm --cached filename
+--> Thông thường, bạn muốn xóa bộ nhớ cache Git của mình vì bạn đã thêm file hoặc thư mục lên hệ thống, dẫn đến khi dùng gitignore không thành công.
+

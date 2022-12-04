@@ -1,9 +1,12 @@
 package JavaLearning.Inheritance;
 
 public class Animal {
-    private String name;
+    public String name;
     private String color;
 
+    public Animal(){
+
+    }
     public Animal(String name, String color) {
         this.name = name;
         this.color = color;

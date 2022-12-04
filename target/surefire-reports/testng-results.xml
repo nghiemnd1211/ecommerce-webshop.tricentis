@@ -1,76 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-07T19:51:05 ICT" name="Surefire suite" finished-at="2022-09-07T19:51:36 ICT" duration-ms="30389">
+  <suite name="TestDataProvider" duration-ms="5992" started-at="2022-12-04T16:04:35 ICT" finished-at="2022-12-04T16:04:41 ICT">
     <groups>
     </groups>
-    <test started-at="2022-09-07T19:51:05 ICT" name="Surefire test" finished-at="2022-09-07T19:51:36 ICT" duration-ms="30389">
-      <class name="test.Login_with_Multiple_Sets_of_Data">
-        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.Login_with_Multiple_Sets_of_Data@5d05ef57]" started-at="2022-09-07T19:51:05 ICT" name="login" description="login with multiple data set without import data file" data-provider="loginData" finished-at="2022-09-07T19:51:22 ICT" duration-ms="16746" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[valid_creds]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-          </params>
+    <test name="Login Test" duration-ms="5992" started-at="2022-12-04T16:04:35 ICT" finished-at="2022-12-04T16:04:41 ICT">
+      <class name="apilearning.LoginForm">
+        <test-method status="PASS" signature="initBrowserSession()[pri:0, instance:apilearning.LoginForm@a77614d]" name="initBrowserSession" is-config="true" duration-ms="4991" started-at="2022-12-04T16:04:35 ICT" finished-at="2022-12-04T16:04:40 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.Login_with_Multiple_Sets_of_Data@5d05ef57]" started-at="2022-09-07T19:51:23 ICT" name="login" description="login with multiple data set without import data file" data-provider="loginData" finished-at="2022-09-07T19:51:29 ICT" duration-ms="6567" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalid_username]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[nghiemnguyen]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- initBrowserSession -->
+        <test-method status="PASS" signature="closeBrowserSession()[pri:0, instance:apilearning.LoginForm@a77614d]" name="closeBrowserSession" is-config="true" duration-ms="936" started-at="2022-12-04T16:04:40 ICT" finished-at="2022-12-04T16:04:41 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.Login_with_Multiple_Sets_of_Data@5d05ef57]" started-at="2022-09-07T19:51:29 ICT" name="login" description="login with multiple data set without import data file" data-provider="loginData" finished-at="2022-09-07T19:51:36 ICT" duration-ms="6502" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalid_password]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[123456!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- test.Login_with_Multiple_Sets_of_Data -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- closeBrowserSession -->
+      </class> <!-- apilearning.LoginForm -->
+    </test> <!-- Login Test -->
+  </suite> <!-- TestDataProvider -->
 </testng-results>

@@ -1,6 +1,9 @@
 package JavaLearning.Inheritance;
 
 public class Cat extends Animal{
+    public Cat(){
+        System.out.println();
+    }
     public Cat(String name, String color){
         super(name,color);
     }

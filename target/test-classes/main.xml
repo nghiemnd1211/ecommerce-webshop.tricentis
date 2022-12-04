@@ -3,14 +3,12 @@
 <suite name="Smoke Test" parallel="tests" thread-count="4">
     <test name="Login Test">
         <classes>
-            <class name="test.CaseByCase.LoginPass"/>
-            <class name="test.CaseByCase.Login_Invalid_Username"></class>
-            <class name="test.CaseByCase.Login_Invalid_Password"></class>
+            <class name=""/>
         </classes>
     </test>
     <test name="Sample">
         <classes>
-            <class name="test.CaseByCase.LoginPass"/>
+            <class name=""/>
         </classes>
     </test>
 </suite>

@@ -10,7 +10,7 @@ import java.util.List;
 
 public class MultiWindowsHandle {
     public static void main(String[] args) {
-        WebDriver driver = DriverFactory.getChromedriver();
+        WebDriver driver = DriverFactory.getChromeDriver();
         driver.get("https://the-internet.herokuapp.com/windows");
         WebElement clickHereLinkText = driver.findElement(By.linkText("Click Here"));
         clickHereLinkText.click();
@@ -27,7 +27,7 @@ public class MultiWindowsHandle {
         //Close the second window
         driver.close();
 
-        //Switch the 1st window
+        //Switch back the 1st window
         driver.switchTo().window(WindowsId.get(firstWindowId));
         System.out.println(driver.getCurrentUrl());
         System.out.println(driver.getTitle());

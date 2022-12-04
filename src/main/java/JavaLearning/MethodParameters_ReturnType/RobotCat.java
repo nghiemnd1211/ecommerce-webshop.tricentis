@@ -3,6 +3,9 @@ package JavaLearning.MethodParameters_ReturnType;
 public class RobotCat {
     String name;
     String id;
+    public RobotCat(){
+
+    }
     public RobotCat(String name, String id){
         this.name = name;
         this.id =  id;

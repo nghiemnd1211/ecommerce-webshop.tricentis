@@ -1,19 +1,20 @@
 package apilearning;
 
-import utils.DriverFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import url.Urls;
+import utils.DriverFactory;
 
 import java.time.Duration;
 
 public class JSAlert {
     public static void main(String[] args) {
-        WebDriver driver = DriverFactory.getChromedriver();
-        driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+        WebDriver driver = DriverFactory.getChromeDriver();
+        driver.get(Urls.HEROKU_BASE_URL.concat(Urls.JAVASCRIPT_ALERTS_SLUG));
         WebElement JSAlert = driver.findElement(By.cssSelector("button[onclick=\"jsAlert()\"]"));
         WebElement JSConfirm = driver.findElement(By.cssSelector("button[onclick=\"jsConfirm()\"]"));
         WebElement JSPropmt = driver.findElement(By.cssSelector("button[onclick=\"jsPrompt()\"]"));

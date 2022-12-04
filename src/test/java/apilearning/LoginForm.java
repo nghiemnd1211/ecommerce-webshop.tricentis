@@ -1,17 +1,19 @@
 package apilearning;
-import utils.DriverFactory;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import tests.BaseTest;
+import utils.DriverFactory;
 
 import java.time.Duration;
 
-public class LoginForm {
+public class LoginForm extends BaseTest {
 
     public static void main(String[] args) {
-        WebDriver driver = DriverFactory.getChromedriver();
+        WebDriver driver = DriverFactory.getChromeDriver();
         driver.get("https://the-internet.herokuapp.com/login");
 
         // Find elements
@@ -27,9 +29,8 @@ public class LoginForm {
         wait.until(ExpectedConditions.elementToBeClickable(loginBtn));
         //Input values
         username.sendKeys("tomsmith");
-        password.sendKeys("SuperSecretPassword!");
+        password.sendKeys("SuperSecretPassword !");
         loginBtn.click();
-
 
     }
 

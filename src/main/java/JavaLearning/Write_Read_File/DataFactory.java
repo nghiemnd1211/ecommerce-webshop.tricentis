@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataFactory {
-    public static boolean isSavingCustomerList(List<Customer> customers, String path) {
+    public static boolean isSavingCustomerList(List<Customer>customers, String path) {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(path);
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, "UTF-8");

@@ -5,6 +5,7 @@ public class TestRobotCat {
         robotCat.sayHello();
         robotCat.sayGoodbye();
     }
+
     public static void main(String[] args) {
         TestRobotCat testRobotCat = new TestRobotCat();
         testRobotCat.demo(new RobotCat("nnn","111"));
