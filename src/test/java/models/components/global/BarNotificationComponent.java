@@ -6,7 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.time.Duration;
 
 @ComponentCssSelector(value = "#bar-notification")
 public class BarNotificationComponent extends Component {
@@ -23,9 +26,9 @@ public class BarNotificationComponent extends Component {
     }
 
     public void verifyItemAddedToCart(){
-        String expectedMsg = "The product has been added to your ";
+        String expectedMsg = "The product has been added to your shopping cart";
+        new WebDriverWait(driver,Duration.ofSeconds(10L)).until(ExpectedConditions.visibilityOf(findElement(contentSel)));
         String actualMsg = findElement(contentSel).getText();
-        wait.until(ExpectedConditions.visibilityOf(findElement(contentSel)));
 
         Assert.assertEquals(actualMsg,expectedMsg,"[ERR] Message content is incorrect");
     }

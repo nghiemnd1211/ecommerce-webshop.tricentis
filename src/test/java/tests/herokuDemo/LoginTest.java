@@ -1,7 +1,7 @@
 package tests.herokuDemo;
 
-import models.pages.herokuPage.LoginPage;
-import models.pages.herokuPage.SecurePage;
+import models.pages.herokuDemo.LoginPage;
+import models.pages.herokuDemo.SecurePage;
 import org.openqa.selenium.WebDriver;
 import utils.DriverFactory;
 
