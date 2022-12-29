@@ -17,11 +17,11 @@ public class FooterColumnComponent extends Component {
     }
 
     public WebElement headerElem() {
-        return component.findElement(headerSel);
+        return findElement(headerSel);
     }
 
     public List<WebElement> linksElem() {
-        return component.findElements(linkSel);
+        return findElements(linkSel);
     }
 
 

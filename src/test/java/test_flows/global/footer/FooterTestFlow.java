@@ -2,7 +2,7 @@ package test_flows.global.footer;
 
 
 import models.components.global.footer.*;
-import models.pages.webShopDemo.BasePage;
+import models.pages.ecommercialWebShop.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;

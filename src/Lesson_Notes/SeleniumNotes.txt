@@ -35,7 +35,7 @@ Run cmd: mvn clean test -Dsuite = relative path (from src/./..)
 
 
 
-Asserttion from TestNG
+Assertion from TestNG
 SortAssert
 Gỉa sử assert fail nhưng nó cũng sẽ pass
 Nhưng nếu sau khi verify tất cả assert (sử dụng assertAll) nó sẽ return fail

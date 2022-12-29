@@ -6,14 +6,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class BaseItemDetailsComponent extends Component {
-    private final static By productPriceSel = By.cssSelector(".product-price");
+    private final static By basePriceSel = By.cssSelector(".product-price");
+    private static final By inputQuantitySel = By.cssSelector(".qty-input");
+
+
     public BaseItemDetailsComponent(WebDriver driver, WebElement component) {
         super(driver, component);
     }
 
-    public double getProductPrice(){
-        String productPriceText = component.findElement(productPriceSel).getText().trim();
+    public double basePrice(){
+        String productPriceText = component.findElement(basePriceSel).getText().trim();
         return Double.parseDouble(productPriceText);
+    }
+
+    public void inputQuantity(int quantity){
+        WebElement quantityElem = findElement(inputQuantitySel);
+        quantityElem.clear();
+        quantityElem.sendKeys(String.valueOf(quantity));
     }
 
 }

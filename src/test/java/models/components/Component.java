@@ -1,6 +1,7 @@
 package models.components;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,7 +15,7 @@ import java.util.stream.Collectors;
 
 public class Component {
     protected WebDriver driver;
-    protected WebElement component; //current component -> go to other component
+    protected WebElement component; //current component -> go to other one
     protected WebDriverWait wait;
 
     public Component(WebDriver driver, WebElement component) {
@@ -66,5 +67,17 @@ public class Component {
             return null;
         }).collect(Collectors.toList());
         return components;
+    }
+
+    public void scrollUpToElement(WebElement element){
+        scrollToElement("true", element);
+    }
+
+    public void scrollDownToElement(WebElement element){
+        scrollToElement("false", element);
+    }
+
+    private void scrollToElement(String position, WebElement element){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(" + position + ")", element);
     }
 }

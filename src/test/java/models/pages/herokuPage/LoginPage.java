@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 public class LoginPage {
+        /*
+                Apply Page Object Model concept
+        * */
         private By usernameSelector = By.id("username");
         private By passwordSelector = By.id("password");
         private By loginBtnSelector = By.cssSelector("[type='submit']");
@@ -53,5 +56,4 @@ public class LoginPage {
 
                 Assert.assertTrue(actualFlagMsg.contains(expectedFlagMsg));
         }
-
 }

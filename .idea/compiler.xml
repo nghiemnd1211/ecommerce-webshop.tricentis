@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Java-with-Selenium-for-Test" />
+        <module name="sdet-demowebshop.tricentis" />
         <module name="Selenium-Starting" />
+        <module name="sdet-demowebshop-tricentis" />
+        <module name="Java-with-Selenium-for-Test" />
       </profile>
     </annotationProcessing>
   </component>

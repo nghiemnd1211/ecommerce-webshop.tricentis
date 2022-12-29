@@ -1,16 +1,13 @@
 package models.components.knowledgepractice.GenericType;
 import java.lang.reflect.Constructor;
 
-public class GenericLoginType {
-    // Gọi class T is a relationship với class LoginPage: T extends LoginPage
-    // Truyền vào 1 class, chứ ko phải object --- Purpose: Khi nào muốn khởi tạo thì sẽ dùng java reflection kéo constructor của nó ra tự khởi tạo
+ public class GenericLoginType {
+    // extends: generic type boundary
     public <T extends LoginPage> void login(Class<T> loginPageClass) {
-        Class<?>[] parameters = new Class[]{}; //empty in this case
+        Class<?>[] parameters = new Class[]{};
         try {
-            // truyền vào các parameters của constructor của class đó
+            // Using java reflection, init params to create an instance
             Constructor<T> constructor = loginPageClass.getConstructor(parameters);
-
-            // creating new instance
             T loginPageObject = constructor.newInstance();
             loginPageObject.login();
 
@@ -20,7 +17,7 @@ public class GenericLoginType {
     }
 
     public static void main(String[] args) {
-        new GenericLoginType().login(InternalLoginPage.class);
         new GenericLoginType().login(ExternalLoginPage.class);
+        new GenericLoginType().login(InternalLoginPage.class);
     }
 }
