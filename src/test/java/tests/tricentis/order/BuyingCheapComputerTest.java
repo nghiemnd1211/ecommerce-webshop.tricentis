@@ -3,7 +3,9 @@ package tests.tricentis.order;
 import models.components.order.CheapComputerComponent;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import test_data.CreditCardType;
 import test_data.DataObjectBuilder;
+import test_data.PaymentMethodType;
 import test_data.computer.ComputerData;
 import test_flows.order_flow.OrderComputerFlow;
 import tests.tricentis.BaseTest;
@@ -23,8 +25,9 @@ public class BuyingCheapComputerTest extends BaseTest {
         orderComputerFlow.inputBillingAddress();
         orderComputerFlow.inputShippingAddress();
         orderComputerFlow.selectShippingMethod();
-        orderComputerFlow.selectPaymentMethod("COD");
-;    }
+        orderComputerFlow.selectPaymentMethod(PaymentMethodType.CREDIT_CARD);
+        orderComputerFlow.inputPaymentInfo(CreditCardType.VISA);
+    }
 
     @DataProvider
     public ComputerData[] computerData() {

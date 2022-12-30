@@ -4,6 +4,7 @@ import models.components.order.StandardComputerComponent;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test_data.DataObjectBuilder;
+import test_data.PaymentMethodType;
 import test_data.computer.ComputerData;
 import test_flows.order_flow.OrderComputerFlow;
 import tests.tricentis.BaseTest;
@@ -18,6 +19,12 @@ public class BuyingStandardComputerTest extends BaseTest {
                 = new OrderComputerFlow<>(driver, StandardComputerComponent.class,computerData);
         orderComputerFlow.buildComputerAndAddToCart();
         orderComputerFlow.verifyShoppingCartPage();
+        orderComputerFlow.agreeTOSAndCheckout();
+        orderComputerFlow.selectToCheckoutAsGuest();
+        orderComputerFlow.inputBillingAddress();
+        orderComputerFlow.inputShippingAddress();
+        orderComputerFlow.selectShippingMethod();
+        orderComputerFlow.selectPaymentMethod(PaymentMethodType.COD);
     }
 
     @DataProvider

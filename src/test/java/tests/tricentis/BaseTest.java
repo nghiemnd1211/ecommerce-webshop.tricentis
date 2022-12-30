@@ -2,13 +2,12 @@ package tests.tricentis;
 
 
 import io.qameta.allure.Allure;
-import org.apache.commons.io.*;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import utils.DriverFactory;
 
@@ -28,12 +27,12 @@ public class BaseTest {
         driver = DriverFactory.getChromeDriver();
     }
 
-    @AfterTest(alwaysRun = true)
-    public void closeBrowserSession() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+//    @AfterTest(alwaysRun = true)
+//    public void closeBrowserSession() {
+//        if (driver != null) {
+//            driver.quit();
+//        }
+//    }
 
     @AfterMethod
     public void captureScreenshot(ITestResult result) {

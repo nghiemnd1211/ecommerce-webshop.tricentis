@@ -8,5 +8,4 @@ public class ConfirmOrderComponent extends Component {
     public ConfirmOrderComponent(WebDriver driver, WebElement component) {
         super(driver, component);
     }
-
 }

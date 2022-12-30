@@ -3,6 +3,8 @@ package test_flows.order_flow;
 import io.qameta.allure.Step;
 import models.components.cart.CartItemRowComponent;
 import models.components.cart.TotalComponent;
+import models.components.checkout.BillingAddressComponent;
+import models.components.checkout.PaymentInformationComponent;
 import models.components.checkout.PaymentMethodComponent;
 import models.components.checkout.ShippingMethodComponent;
 import models.components.order.ComputerEssentialsComponent;
@@ -10,17 +12,17 @@ import models.pages.tricentis.CheckoutOptionPage;
 import models.pages.tricentis.CheckoutPage;
 import models.pages.tricentis.ComputerItemDetailsPage;
 import models.pages.tricentis.ShoppingCartPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import test_data.CreditCardType;
 import test_data.DataObjectBuilder;
+import test_data.PaymentMethodType;
 import test_data.UserData.UserDataObject;
 import test_data.computer.ComputerData;
 
 import java.security.SecureRandom;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -100,7 +102,7 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
         return price * factor;
     }
 
-    @Step("verify shopping cart")
+    @Step("Verify shopping cart")
     public void verifyShoppingCartPage() {
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
         //verify the CartItemComponent list
@@ -152,11 +154,12 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
     }
 
     @Step("Click on Agree To Term Of Service")
-    public void agreeTOSAndCheckout(){
+    public void agreeTOSAndCheckout() {
         ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
         shoppingCartPage.totalComp().selectAgreeTOS();
         shoppingCartPage.totalComp().clickOnCheckoutBtn();
     }
+
     @Step("Checking out as guest")
     public void selectToCheckoutAsGuest() {
         CheckoutOptionPage checkoutOptionPage = new CheckoutOptionPage(driver);
@@ -166,35 +169,39 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
     @Step("Input Billing Address")
     public void inputBillingAddress() {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
+        BillingAddressComponent billingAddressComp = checkoutPage.billingAddressComponent();
         String fileLocation = "/src/test/java/test_data/UserData/UserCheckoutData.json";
 
-        //        checkoutPage.billingAddressComponent().inputFirstName(DataObjectBuilder.buildDataObjectFrom(fileLocation, UserDataObject.class).getFirstname());
+        if (!billingAddressComp.findElements(By.cssSelector("select#billing-address-select")).isEmpty()) {
+            billingAddressComp.selectNewAddress();
+        }
+
         defaultCheckoutUser = DataObjectBuilder.buildDataObjectFrom(fileLocation, UserDataObject.class);
         System.out.println(defaultCheckoutUser);
 
-
-        checkoutPage.billingAddressComponent().inputFirstName(defaultCheckoutUser.getFirstName());
-        checkoutPage.billingAddressComponent().inputLastName(defaultCheckoutUser.getLastName());
-        checkoutPage.billingAddressComponent().inputEmail(defaultCheckoutUser.getEmail());
-        checkoutPage.billingAddressComponent().inputCompany(defaultCheckoutUser.getCompany());
-        checkoutPage.billingAddressComponent().selectCountryOption(defaultCheckoutUser.getCountry());
-        checkoutPage.billingAddressComponent().selectStateOption(defaultCheckoutUser.getState());
-        checkoutPage.billingAddressComponent().inputCity(defaultCheckoutUser.getCity());
-        checkoutPage.billingAddressComponent().inputAddress1(defaultCheckoutUser.getAddress1());
-        checkoutPage.billingAddressComponent().inputAddress2(defaultCheckoutUser.getAddress2());
-        checkoutPage.billingAddressComponent().inputZipCode(defaultCheckoutUser.getZipCode());
-        checkoutPage.billingAddressComponent().inputPhoneNumber(defaultCheckoutUser.getPhoneNum());
-        checkoutPage.billingAddressComponent().inputFaxNumber(defaultCheckoutUser.getFaxNum());
+        billingAddressComp.inputFirstName(defaultCheckoutUser.getFirstName());
+        billingAddressComp.inputLastName(defaultCheckoutUser.getLastName());
+        billingAddressComp.inputEmail(defaultCheckoutUser.getEmail());
+        billingAddressComp.inputCompany(defaultCheckoutUser.getCompany());
+        billingAddressComp.selectCountryOption(defaultCheckoutUser.getCountry());
+        billingAddressComp.selectStateOption(defaultCheckoutUser.getState());
+        billingAddressComp.inputCity(defaultCheckoutUser.getCity());
+        billingAddressComp.inputAddress1(defaultCheckoutUser.getAddress1());
+        billingAddressComp.inputAddress2(defaultCheckoutUser.getAddress2());
+        billingAddressComp.inputZipCode(defaultCheckoutUser.getZipCode());
+        billingAddressComp.inputPhoneNumber(defaultCheckoutUser.getPhoneNum());
+        billingAddressComp.inputFaxNumber(defaultCheckoutUser.getFaxNum());
 
         checkoutPage.billingAddressComponent().clickOnContinueBtn();
     }
+
     @Step("Input Shipping Address")
-    public void inputShippingAddress(){
+    public void inputShippingAddress() {
         new CheckoutPage(driver).shippingAddressComponent().clickOnContinueBtn();
     }
 
     @Step("Input Shipping Method")
-    public void selectShippingMethod(){
+    public void selectShippingMethod() {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         ShippingMethodComponent shippingMethodComp = checkoutPage.shippingMethodComponent();
 
@@ -205,19 +212,19 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
         shippingMethodComp.selectShippingMethod(randomMethod);
         shippingMethodComp.clickOnContinueBtn();
     }
+
     @Step("Select Payment method")
-    public void selectPaymentMethod(String paymentMethodType){
+    public void selectPaymentMethod(PaymentMethodType paymentMethodType) {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         PaymentMethodComponent paymentMethodComp = checkoutPage.paymentMethodComponent();
-
-        switch (paymentMethodType){
-            case "Check/Money Order":
+        switch (paymentMethodType) {
+            case CHECK_MONEY_ORDER:
                 paymentMethodComp.selectCheckMoneyOrderMethod();
                 break;
-            case "Credit Card":
+            case CREDIT_CARD:
                 paymentMethodComp.selectCreditCardMethod();
                 break;
-            case "Purchase Order":
+            case PURCHASE_ORDER:
                 paymentMethodComp.selectPurchaseOrder();
                 break;
             default:
@@ -225,5 +232,23 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
                 break;
         }
         paymentMethodComp.clickOnContinueBtn();
+    }
+    @Step("Input Payment Information")
+    public void inputPaymentInfo(CreditCardType creditCardType) {
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        PaymentInformationComponent paymentInformationComp = checkoutPage.paymentInformationComponent();
+
+        paymentInformationComp.selectCreditCard(creditCardType);
+
+        paymentInformationComp.inputCardholderName(defaultCheckoutUser.getFirstName() + " " + defaultCheckoutUser.getLastName());
+        paymentInformationComp.inputCardNum(creditCardType.equals("VISA")?"4012888888881881":"6011000990139424");
+
+        // Select current month and next year
+        Calendar calendar = new GregorianCalendar();
+        paymentInformationComp.selectExpiredMoth(String.valueOf(calendar.get(Calendar.MONTH) + 1));
+        paymentInformationComp.selectExpiredYear(String.valueOf(calendar.get(Calendar.YEAR) + 1));
+
+        paymentInformationComp.inputCardCode("123");
+        paymentInformationComp.clickOnContinueBtn();
     }
 }

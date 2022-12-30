@@ -62,3 +62,12 @@ Bad practice: static WebDriver ?
 
 ## Using backslash to print
         By shippingMethodSel = By.xpath("//label[contains(text(),"+ "\""+shippingMethod + "\")]");
+## Handles DOM element in Console
+$x("//label[contains(text(),'Medium')]")[0].click()
+
+## CLI
+    Runtest: 
+             mvn clean test -Dtest=BuyingStandardComputerTest
+             mvn clean test -DSuite=regression (assign dir .xml to suite tag in POM file)
+    Get allure results: 
+             allure generate allure-results --clean

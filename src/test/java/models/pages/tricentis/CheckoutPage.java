@@ -21,6 +21,9 @@ public class CheckoutPage extends BasePage{
     public PaymentMethodComponent paymentMethodComponent(){
         return findComponent(PaymentMethodComponent.class,driver);
     }
+    public PaymentInformationComponent paymentInformationComponent(){
+        return findComponent(PaymentInformationComponent.class,driver);
+    }
     public ConfirmOrderComponent confirmOrderComponent(){
         return findComponent(ConfirmOrderComponent.class,driver);
     }

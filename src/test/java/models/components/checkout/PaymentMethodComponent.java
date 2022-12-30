@@ -10,7 +10,8 @@ import org.openqa.selenium.WebElement;
 public class PaymentMethodComponent extends Component {
     private static final By codSel = By.cssSelector("input[value='Payments.CashOnDelivery']");
     private static final By checkMoneyOrderSel = By.cssSelector("input[value='Payments.CheckMoneyOrder']");
-    private static final By creditCardSel = By.cssSelector("input[value='Payments.CashOnDelivery']");
+    private static final By creditCardSel = By.cssSelector("input[value='Payments.Manual']");
+//    private static final By creditCardSel = By.xpath("//label[contains(text(),'Credit Card')]");
     private static final By purchaseOrderSel = By.cssSelector("input[value='Payments.PurchaseOrder']");
     private final static By continueBtnSel = By.cssSelector(".payment-method-next-step-button");
 
