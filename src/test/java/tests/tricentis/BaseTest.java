@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import utils.DriverFactory;
 
@@ -25,14 +26,15 @@ public class BaseTest {
     @BeforeTest
     public void initBrowserSession() {
         driver = DriverFactory.getChromeDriver();
+
     }
 
-//    @AfterTest(alwaysRun = true)
-//    public void closeBrowserSession() {
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
+    @AfterTest(alwaysRun = true)
+    public void closeBrowserSession() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 
     @AfterMethod
     public void captureScreenshot(ITestResult result) {

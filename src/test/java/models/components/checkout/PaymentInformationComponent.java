@@ -5,6 +5,7 @@ import models.components.ComponentCssSelector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import test_data.CreditCardType;
 
@@ -22,6 +23,7 @@ public class PaymentInformationComponent extends Component {
     public PaymentInformationComponent(WebDriver driver, WebElement component) {
         super(driver, component);
     }
+
 
     public void selectCreditCard(CreditCardType creditCardType) {
         Select select = new Select(findElement(creditCardDropdownSel));
@@ -51,13 +53,13 @@ public class PaymentInformationComponent extends Component {
     public void selectExpiredMoth(String expiredMonth) {
         WebElement expiredMonthDropdownElem = findElement(expiredMonthDropdownSel);
         Select select = new Select(expiredMonthDropdownElem);
-        select.selectByVisibleText(expiredMonth);
+        select.selectByValue(expiredMonth);
     }
 
     public void selectExpiredYear(String expiredYear) {
         WebElement expiredYearDropdownElem = findElement(expiredYearDropdownSel);
         Select select = new Select(expiredYearDropdownElem);
-        select.selectByVisibleText(expiredYear);
+        select.selectByValue(expiredYear);
     }
 
     public void inputCardCode(String cardCode) {
@@ -65,6 +67,10 @@ public class PaymentInformationComponent extends Component {
     }
 
     public void clickOnContinueBtn() {
-        findElement(continueBtnSel).click();
+        WebElement continueBtnElem = findElement(continueBtnSel);
+        scrollDownToElement(continueBtnElem);
+        continueBtnElem.click();
+        wait.until(ExpectedConditions.invisibilityOf(continueBtnElem));
+
     }
 }

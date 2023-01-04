@@ -60,10 +60,12 @@ Bad practice: static WebDriver ?
 .class1.class2 selects an element that has both classes.
 .class1 .class2 selects an element with a class of .class2 that is a child of an element that has a class of .class1.
 
-## Using backslash to print
+## Using backslash to print "
         By shippingMethodSel = By.xpath("//label[contains(text(),"+ "\""+shippingMethod + "\")]");
+
 ## Handles DOM element in Console
-$x("//label[contains(text(),'Medium')]")[0].click()
+for Css selector $$("")
+for xpath $x("//label[contains(text(),'Medium')]")[0].click()
 
 ## CLI
     Runtest: 
@@ -71,3 +73,4 @@ $x("//label[contains(text(),'Medium')]")[0].click()
              mvn clean test -DSuite=regression (assign dir .xml to suite tag in POM file)
     Get allure results: 
              allure generate allure-results --clean
+

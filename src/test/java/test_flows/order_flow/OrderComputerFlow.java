@@ -3,15 +3,9 @@ package test_flows.order_flow;
 import io.qameta.allure.Step;
 import models.components.cart.CartItemRowComponent;
 import models.components.cart.TotalComponent;
-import models.components.checkout.BillingAddressComponent;
-import models.components.checkout.PaymentInformationComponent;
-import models.components.checkout.PaymentMethodComponent;
-import models.components.checkout.ShippingMethodComponent;
+import models.components.checkout.*;
 import models.components.order.ComputerEssentialsComponent;
-import models.pages.tricentis.CheckoutOptionPage;
-import models.pages.tricentis.CheckoutPage;
-import models.pages.tricentis.ComputerItemDetailsPage;
-import models.pages.tricentis.ShoppingCartPage;
+import models.pages.tricentis.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -124,8 +118,9 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
         // Get checkout price from TotalComponent
         TotalComponent totalComponent = shoppingCartPage.totalComp();
         Map<String, Double> priceCategorized = totalComponent.priceCategorized();
-        System.out.println("############################################################");
-        System.out.println(priceCategorized);
+
+        System.out.println("############# Checkout Price ############");
+        System.out.println("Price Categorized: " + priceCategorized);
 
         /*verification points
          * 1. allSubTotal = checkoutSubTotal ?
@@ -145,9 +140,9 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
                 checkoutOtherFees += priceValue;
             }
         }
-        System.out.println("checkoutSubTotal: " + checkoutSubTotal);
-        System.out.println("checkoutOtherFees: " + checkoutOtherFees);
-        System.out.println("checkoutTotal: " + checkoutTotal);
+        System.out.println("SubTotal: " + checkoutSubTotal);
+        System.out.println("OtherFees: " + checkoutOtherFees);
+        System.out.println("Total: " + checkoutTotal);
 
         Assert.assertEquals(allSubTotal, checkoutSubTotal, "[ERR] Checking out Sub Total price is incorrect!");
         Assert.assertEquals((checkoutSubTotal + checkoutOtherFees), checkoutTotal, "[ERR] Checking out Total price is incorrect!");
@@ -233,22 +228,40 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
         }
         paymentMethodComp.clickOnContinueBtn();
     }
+
     @Step("Input Payment Information")
     public void inputPaymentInfo(CreditCardType creditCardType) {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         PaymentInformationComponent paymentInformationComp = checkoutPage.paymentInformationComponent();
+        By creditCardDropdownSel = By.cssSelector("#CreditCardType");
 
-        paymentInformationComp.selectCreditCard(creditCardType);
+        //boolean isHavingCreditCardDropdown = paymentInformationComp.findElements(creditCardDropdownSel).isEmpty();
+        if (!paymentInformationComp.findElements(creditCardDropdownSel).isEmpty()) {
+            paymentInformationComp.selectCreditCard(creditCardType);
 
-        paymentInformationComp.inputCardholderName(defaultCheckoutUser.getFirstName() + " " + defaultCheckoutUser.getLastName());
-        paymentInformationComp.inputCardNum(creditCardType.equals("VISA")?"4012888888881881":"6011000990139424");
+            paymentInformationComp.inputCardholderName(defaultCheckoutUser.getFirstName() + " " + defaultCheckoutUser.getLastName());
+            paymentInformationComp.inputCardNum(creditCardType.equals("VISA") ? "4012888888881881" : "6011000990139424");
 
-        // Select current month and next year
-        Calendar calendar = new GregorianCalendar();
-        paymentInformationComp.selectExpiredMoth(String.valueOf(calendar.get(Calendar.MONTH) + 1));
-        paymentInformationComp.selectExpiredYear(String.valueOf(calendar.get(Calendar.YEAR) + 1));
+            // Select current month and next year
+            Calendar calendar = new GregorianCalendar();
+            int month = calendar.get(Calendar.MONTH) + 1;
+            int year = calendar.get(Calendar.YEAR) + 1;
 
-        paymentInformationComp.inputCardCode("123");
+            System.out.println("Select expired month:" + month +"\n" + "Select expired year: " +year);
+            paymentInformationComp.selectExpiredMoth(String.valueOf(month));
+            paymentInformationComp.selectExpiredYear(String.valueOf(year));
+
+            paymentInformationComp.inputCardCode("123");
+        }
         paymentInformationComp.clickOnContinueBtn();
+    }
+
+    @Step("Confirm and Verify the Order")
+    public void confirmAndVerifyOrder() {
+        CheckoutPage checkoutPage = new CheckoutPage(driver);
+        ConfirmOrderComponent confirmOrderComp = checkoutPage.confirmOrderComponent();
+        confirmOrderComp.clickOnConfirmBtn();
+
+        new CheckoutCompletedPage(driver).clickOnContinueBtn();
     }
 }
