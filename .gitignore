@@ -12,3 +12,6 @@ buildNumber.properties
 .idea
 allure-*
 screenshots
+src/Lesson_Notes
+src/test/java/apilearning
+src/main/java/programmingConcept
