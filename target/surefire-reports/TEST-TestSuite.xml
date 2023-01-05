@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="114.731" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="253.751" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="webdriver.chrome.driver" value="C:\Users\PC\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe"/>
@@ -8,7 +8,6 @@
     <property name="java.class.path" value="C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\target\test-classes;C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\target\classes;C:\Users\PC\.m2\repository\org\slf4j\slf4j-jdk14\1.7.25\slf4j-jdk14-1.7.25.jar;C:\Users\PC\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.6.0\selenium-java-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.6.0\selenium-api-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.6.0\selenium-chrome-driver-4.6.0.jar;C:\Users\PC\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\PC\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\PC\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\PC\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\PC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\PC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\PC\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\PC\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\PC\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.6.0\selenium-chromium-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.6.0\selenium-json-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v105\4.6.0\selenium-devtools-v105-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.6.0\selenium-devtools-v106-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v107\4.6.0\selenium-devtools-v107-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.6.0\selenium-devtools-v85-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.6.0\selenium-edge-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.6.0\selenium-firefox-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.6.0\selenium-ie-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.6.0\selenium-remote-driver-4.6.0.jar;C:\Users\PC\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\Users\PC\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\PC\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\PC\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\PC\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\PC\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\PC\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\PC\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\PC\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.6.0\selenium-http-4.6.0.jar;C:\Users\PC\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.6.0\selenium-manager-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.6.0\selenium-safari-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.6.0\selenium-support-4.6.0.jar;C:\Users\PC\.m2\repository\io\github\bonigarcia\webdrivermanager\5.2.1\webdrivermanager-5.2.1.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\PC\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\PC\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\PC\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\PC\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\PC\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\PC\.m2\repository\org\testng\testng\7.6.1\testng-7.6.1.jar;C:\Users\PC\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\PC\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\PC\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\PC\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\PC\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml\5.2.2\poi-ooxml-5.2.2.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.2\poi-ooxml-lite-5.2.2.jar;C:\Users\PC\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\PC\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.0\xmlbeans-5.1.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\PC\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-testng\2.19.0\allure-testng-2.19.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-java-commons\2.19.0\allure-java-commons-2.19.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-model\2.19.0\allure-model-2.19.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-test-filter\2.19.0\allure-test-filter-2.19.0.jar;C:\Users\PC\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="Suite" value="regression"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Bangkok"/>
@@ -17,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\PC\AppData\Local\Temp\surefire7614441539168966292\surefirebooter8308644702785303935.jar C:\Users\PC\AppData\Local\Temp\surefire7614441539168966292 2022-12-30T10-47-28_327-jvmRun1 surefire2056579939135162345tmp surefire_016198909644822521053tmp"/>
+    <property name="sun.java.command" value="C:\Users\PC\AppData\Local\Temp\surefire7792969782152552690\surefirebooter17836439811358612673.jar C:\Users\PC\AppData\Local\Temp\surefire7792969782152552690 2023-01-05T17-03-47_775-jvmRun1 surefire9263914687045111610tmp surefire_010433810156425628793tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\target\test-classes;C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\target\classes;C:\Users\PC\.m2\repository\org\slf4j\slf4j-jdk14\1.7.25\slf4j-jdk14-1.7.25.jar;C:\Users\PC\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.6.0\selenium-java-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.6.0\selenium-api-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.6.0\selenium-chrome-driver-4.6.0.jar;C:\Users\PC\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\PC\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\PC\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\PC\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\PC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\PC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\PC\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\PC\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\PC\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.6.0\selenium-chromium-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.6.0\selenium-json-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v105\4.6.0\selenium-devtools-v105-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.6.0\selenium-devtools-v106-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v107\4.6.0\selenium-devtools-v107-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.6.0\selenium-devtools-v85-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.6.0\selenium-edge-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.6.0\selenium-firefox-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.6.0\selenium-ie-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.6.0\selenium-remote-driver-4.6.0.jar;C:\Users\PC\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\Users\PC\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\Users\PC\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\PC\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\PC\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\PC\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\PC\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\PC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\PC\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\PC\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\PC\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.6.0\selenium-http-4.6.0.jar;C:\Users\PC\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.6.0\selenium-manager-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.6.0\selenium-safari-driver-4.6.0.jar;C:\Users\PC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.6.0\selenium-support-4.6.0.jar;C:\Users\PC\.m2\repository\io\github\bonigarcia\webdrivermanager\5.2.1\webdrivermanager-5.2.1.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\PC\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\PC\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\PC\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\PC\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\PC\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\PC\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\PC\.m2\repository\org\testng\testng\7.6.1\testng-7.6.1.jar;C:\Users\PC\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\PC\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\PC\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi\5.2.2\poi-5.2.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\PC\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\PC\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml\5.2.2\poi-ooxml-5.2.2.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.2\poi-ooxml-lite-5.2.2.jar;C:\Users\PC\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\PC\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\PC\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.0\xmlbeans-5.1.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\PC\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-testng\2.19.0\allure-testng-2.19.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-java-commons\2.19.0\allure-java-commons-2.19.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-model\2.19.0\allure-model-2.19.0.jar;C:\Users\PC\.m2\repository\io\qameta\allure\allure-test-filter\2.19.0\allure-test-filter-2.19.0.jar;C:\Users\PC\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\PC\AppData\Local\Temp\surefire7614441539168966292\surefirebooter8308644702785303935.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\PC\AppData\Local\Temp\surefire7792969782152552690\surefirebooter17836439811358612673.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -50,197 +49,146 @@
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\PC\scoop\shims;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\dotnet\;C:\Users\PC\scoop\shims;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2\bin;;."/>
+    <property name="suite" value="regression"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="15.0.2+7-27"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testFooterCategoryPage" classname="tests.tricentis.footer.FooterTest" time="4.664">
-    <system-err><![CDATA[Dec 30, 2022 10:47:33 AM io.github.bonigarcia.wdm.WebDriverManager resolveDriverVersion
-INFO: Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
-Dec 30, 2022 10:47:33 AM io.github.bonigarcia.wdm.WebDriverManager resolveDriverVersion
-INFO: Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
-Dec 30, 2022 10:47:33 AM io.github.bonigarcia.wdm.WebDriverManager exportDriver
-INFO: Exporting webdriver.chrome.driver as C:\Users\PC\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
-Dec 30, 2022 10:47:33 AM io.github.bonigarcia.wdm.WebDriverManager exportDriver
-INFO: Exporting webdriver.chrome.driver as C:\Users\PC\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 1655
-Only local connectionsS atraret ianlgl oCwherdo.m
-ePDlreaisev erse e10 8.0.h53tt5p9.s7:1/ /(chro1meedr0iev3e8r.6c8here0o6meiu9m1.aod6rg3/6sae87c4u4r2i0et3yc-a3ace37o5n6saic-derrefast/iobnrsan cfh-oherads /5s3u5g9g@e{s#t1i01o6n})s o no np okrete p65i1n5g
- OCnhlyr olomceaDlr icovnenerc tsiaofnes. a
-re allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-ChromeDriver was started successfully.
-Dec 30, 2022 10:47:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 108, so returning the closest version found: 107
-Dec 30, 2022 10:47:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 108, so returning the closest version found: 107
-]]></system-err>
-  </testcase>
-  <testcase name="testFooterHomePage" classname="tests.tricentis.footer.FooterTest" time="6.404">
+  <testcase name="testStandardComputerBuying[ComputerData{processorType=&apos;2.2GHz&apos;, ram=&apos;8GB&apos;, os=&apos;Ubuntu&apos;, hdd=&apos;400 GB&apos;, software=&apos;Microsoft Office&apos;}](1)" classname="tests.tricentis.order.BuyingStandardComputerTest" time="61.195">
     <system-out><![CDATA[Additional price: 100.0
 Additional price: 50.0
 Base price: 1200.0
 ==> Sub-Total on item: 1350.0
+
+############# Checkout Price ############
+Price Categorized: {Total=1365.0, Tax=0.0, Shipping=0.0, Sub-Total=1365.0}
+	SubTotal: 1365.0
+	OtherFees: 0.0
+	Total: 1365.0
+UserDataObject{firstName='Nghiem', lastLame='Nguyen', email='nghiemtest@gmail.com', company='Bosch', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+Shipping Method Selected is: Ground (0.00)
+
+Payment Method Selected is: Credit Card
+Select expired month:1
+Select expired year: 2024
 ]]></system-out>
-    <system-err><![CDATA[Dec 30, 2022 10:47:43 AM io.github.bonigarcia.wdm.WebDriverManager resolveDriverVersion
+    <system-err><![CDATA[Jan 05, 2023 5:03:55 PM io.github.bonigarcia.wdm.WebDriverManager resolveDriverVersion
 INFO: Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
-Dec 30, 2022 10:47:43 AM io.github.bonigarcia.wdm.WebDriverManager exportDriver
+Jan 05, 2023 5:03:55 PM io.github.bonigarcia.wdm.WebDriverManager exportDriver
 INFO: Exporting webdriver.chrome.driver as C:\Users\PC\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 9142
+Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 47669
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Dec 30, 2022 10:47:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 108, so returning the closest version found: 107
-org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //li/ /a because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//li/ /a' is not a valid XPath expression.
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf2dd25d5e4d89ab691f6909b9cadf0c, findChildElements {id=bd30f63a-a329-49f4-bb95-581c2c92c520, using=xpath, value=//li/ /a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:49963}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49963/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf2dd25d5e4d89ab691f6909b9cadf0c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:219)
-	at models.components.Component.findElements(Component.java:33)
-	at models.components.global.footer.FooterColumnComponent.linksElem(FooterColumnComponent.java:24)
-	at test_flows.global.footer.FooterTestFlow.verifyFooterColumn(FooterTestFlow.java:72)
-	at test_flows.global.footer.FooterTestFlow.verifyInformationColumn(FooterTestFlow.java:52)
-	at test_flows.global.footer.FooterTestFlow.verifyFooterComponent(FooterTestFlow.java:29)
-	at tests.tricentis.footer.FooterTest.testFooterHomePage(FooterTest.java:17)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-]]></system-err>
-  </testcase>
-  <testcase name="testFooterLoginPage" classname="tests.tricentis.footer.FooterTest" time="5.463">
-    <system-out><![CDATA[############################################################
-{Total=1365.0, Tax=0.0, Shipping=0.0, Sub-Total=1365.0}
-checkoutSubTotal: 1365.0
-checkoutOtherFees: 0.0
-checkoutTotal: 1365.0
-]]></system-out>
-    <system-err><![CDATA[Dec 30, 2022 10:47:50 AM io.github.bonigarcia.wdm.WebDriverManager resolveDriverVersion
-INFO: Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
-Dec 30, 2022 10:47:50 AM io.github.bonigarcia.wdm.WebDriverManager exportDriver
-INFO: Exporting webdriver.chrome.driver as C:\Users\PC\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 17262
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Dec 30, 2022 10:47:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jan 05, 2023 5:04:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 108, so returning the closest version found: 107
 ]]></system-err>
   </testcase>
-  <testcase name="testStandardComputerBuying[ComputerData{processorType=&apos;2.2GHz&apos;, ram=&apos;8GB&apos;, os=&apos;Ubuntu&apos;, hdd=&apos;400 GB&apos;, software=&apos;Microsoft Office&apos;}](1)" classname="tests.tricentis.order.BuyingStandardComputerTest" time="18.065">
-    <system-out><![CDATA[UserDataObject{firstName='Firstname', lastLame='Lastname', email='email@email.com', company='CompanyName', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
-]]></system-out>
-  </testcase>
-  <testcase name="testStandardComputerBuying[ComputerData{processorType=&apos;2.5GHz&apos;, ram=&apos;4GB&apos;, os=&apos;Windows 7&apos;, hdd=&apos;320 GB&apos;, software=&apos;Acrobat Reader&apos;}](2)" classname="tests.tricentis.order.BuyingStandardComputerTest" time="15.771">
+  <testcase name="testStandardComputerBuying[ComputerData{processorType=&apos;2.5GHz&apos;, ram=&apos;4GB&apos;, os=&apos;Windows 7&apos;, hdd=&apos;320 GB&apos;, software=&apos;Acrobat Reader&apos;}](2)" classname="tests.tricentis.order.BuyingStandardComputerTest" time="42.337">
     <system-out><![CDATA[Additional price: 50.0
 Additional price: 10.0
 Base price: 1200.0
 ==> Sub-Total on item: 1260.0
-############################################################
-{Total=2640.0, Tax=0.0, Shipping=0.0, Sub-Total=2640.0}
-checkoutSubTotal: 2640.0
-checkoutOtherFees: 0.0
-checkoutTotal: 2640.0
-UserDataObject{firstName='Firstname', lastLame='Lastname', email='email@email.com', company='CompanyName', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+############# Checkout Price ############
+Price Categorized: {Total=1275.0, Tax=0.0, Shipping=0.0, Sub-Total=1275.0}
+	SubTotal: 1275.0
+	OtherFees: 0.0
+	Total: 1275.0
+UserDataObject{firstName='Nghiem', lastLame='Nguyen', email='nghiemtest@gmail.com', company='Bosch', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+Shipping Method Selected is: 2nd Day Air (0.00)
+
+Payment Method Selected is: Credit Card
+Select expired month:1
+Select expired year: 2024
 ]]></system-out>
   </testcase>
-  <testcase name="testStandardComputerBuying[ComputerData{processorType=&apos;2.2GHz&apos;, ram=&apos;2GB&apos;, os=&apos;Windows 10&apos;, hdd=&apos;320 GB&apos;, software=&apos;Total Commander&apos;}](3)" classname="tests.tricentis.order.BuyingStandardComputerTest" time="14.449">
+  <testcase name="testStandardComputerBuying[ComputerData{processorType=&apos;2.2GHz&apos;, ram=&apos;2GB&apos;, os=&apos;Windows 10&apos;, hdd=&apos;320 GB&apos;, software=&apos;Total Commander&apos;}](3)" classname="tests.tricentis.order.BuyingStandardComputerTest" time="37.497">
     <system-out><![CDATA[Additional price: 60.0
 Additional price: 5.0
 Base price: 1200.0
 ==> Sub-Total on item: 1265.0
-############################################################
-{Total=3920.0, Tax=0.0, Shipping=0.0, Sub-Total=3920.0}
-checkoutSubTotal: 3920.0
-checkoutOtherFees: 0.0
-checkoutTotal: 3920.0
-UserDataObject{firstName='Firstname', lastLame='Lastname', email='email@email.com', company='CompanyName', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+############# Checkout Price ############
+Price Categorized: {Total=1280.0, Tax=0.0, Shipping=0.0, Sub-Total=1280.0}
+	SubTotal: 1280.0
+	OtherFees: 0.0
+	Total: 1280.0
+UserDataObject{firstName='Nghiem', lastLame='Nguyen', email='nghiemtest@gmail.com', company='Bosch', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+Shipping Method Selected is: Ground (0.00)
+
+Payment Method Selected is: Credit Card
+Select expired month:1
+Select expired year: 2024
 ]]></system-out>
   </testcase>
-  <testcase name="testCheapComputerBuying[ComputerData{processorType=&apos;Fast&apos;, ram=&apos;8 GB&apos;, os=&apos;null&apos;, hdd=&apos;320 GB&apos;, software=&apos;Image Viever&apos;}](1)" classname="tests.tricentis.order.BuyingCheapComputerTest" time="14.458">
+  <testcase name="testCheapComputerBuying[ComputerData{processorType=&apos;Fast&apos;, ram=&apos;8 GB&apos;, os=&apos;null&apos;, hdd=&apos;320 GB&apos;, software=&apos;Image Viever&apos;}](1)" classname="tests.tricentis.order.BuyingCheapComputerTest" time="40.035">
     <system-out><![CDATA[Additional price: 60.0
 Additional price: 100.0
 Additional price: 5.0
 Base price: 800.0
 ==> Sub-Total on item: 965.0
-############################################################
-{Total=4885.0, Tax=0.0, Shipping=0.0, Sub-Total=4885.0}
-checkoutSubTotal: 4885.0
-checkoutOtherFees: 0.0
-checkoutTotal: 4885.0
-UserDataObject{firstName='Firstname', lastLame='Lastname', email='email@email.com', company='CompanyName', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+############# Checkout Price ############
+Price Categorized: {Total=965.0, Tax=0.0, Shipping=0.0, Sub-Total=965.0}
+	SubTotal: 965.0
+	OtherFees: 0.0
+	Total: 965.0
+UserDataObject{firstName='Nghiem', lastLame='Nguyen', email='nghiemtest@gmail.com', company='Bosch', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+Shipping Method Selected is: Next Day Air (0.00)
+
+Payment Method Selected is: Credit Card
+Select expired month:1
+Select expired year: 2024
 ]]></system-out>
   </testcase>
-  <testcase name="testCheapComputerBuying[ComputerData{processorType=&apos;Fast&apos;, ram=&apos;4 GB&apos;, os=&apos;null&apos;, hdd=&apos;400 GB&apos;, software=&apos;Office Suite&apos;}](2)" classname="tests.tricentis.order.BuyingCheapComputerTest" time="15.784">
+  <testcase name="testCheapComputerBuying[ComputerData{processorType=&apos;Fast&apos;, ram=&apos;4 GB&apos;, os=&apos;null&apos;, hdd=&apos;400 GB&apos;, software=&apos;Office Suite&apos;}](2)" classname="tests.tricentis.order.BuyingCheapComputerTest" time="31.646">
     <system-out><![CDATA[Additional price: 20.0
 Additional price: 100.0
 Additional price: 100.0
 Additional price: 100.0
 Base price: 800.0
 ==> Sub-Total on item: 1120.0
-############################################################
-{Total=6005.0, Tax=0.0, Shipping=0.0, Sub-Total=6005.0}
-checkoutSubTotal: 6005.0
-checkoutOtherFees: 0.0
-checkoutTotal: 6005.0
-UserDataObject{firstName='Firstname', lastLame='Lastname', email='email@email.com', company='CompanyName', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+############# Checkout Price ############
+Price Categorized: {Total=1120.0, Tax=0.0, Shipping=0.0, Sub-Total=1120.0}
+	SubTotal: 1120.0
+	OtherFees: 0.0
+	Total: 1120.0
+UserDataObject{firstName='Nghiem', lastLame='Nguyen', email='nghiemtest@gmail.com', company='Bosch', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+Shipping Method Selected is: Ground (0.00)
+
+Payment Method Selected is: Credit Card
+Select expired month:1
+Select expired year: 2024
 ]]></system-out>
   </testcase>
-  <testcase name="testCheapComputerBuying[ComputerData{processorType=&apos;Fast&apos;, ram=&apos;2 GB&apos;, os=&apos;null&apos;, hdd=&apos;320 GB&apos;, software=&apos;Other Office Suite&apos;}](3)" classname="tests.tricentis.order.BuyingCheapComputerTest" time="14.705">
+  <testcase name="testCheapComputerBuying[ComputerData{processorType=&apos;Fast&apos;, ram=&apos;2 GB&apos;, os=&apos;null&apos;, hdd=&apos;320 GB&apos;, software=&apos;Other Office Suite&apos;}](3)" classname="tests.tricentis.order.BuyingCheapComputerTest" time="29.067">
     <system-out><![CDATA[Additional price: 100.0
 Additional price: 40.0
 Base price: 800.0
 ==> Sub-Total on item: 940.0
-############################################################
-{Total=6945.0, Tax=0.0, Shipping=0.0, Sub-Total=6945.0}
-checkoutSubTotal: 6945.0
-checkoutOtherFees: 0.0
-checkoutTotal: 6945.0
-UserDataObject{firstName='Firstname', lastLame='Lastname', email='email@email.com', company='CompanyName', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+############# Checkout Price ############
+Price Categorized: {Total=940.0, Tax=0.0, Shipping=0.0, Sub-Total=940.0}
+	SubTotal: 940.0
+	OtherFees: 0.0
+	Total: 940.0
+UserDataObject{firstName='Nghiem', lastLame='Nguyen', email='nghiemtest@gmail.com', company='Bosch', country='United States', state='Alabama', city='City', address1='Address 1', address2='Address 2', zipCode='1234', phoneNum='0987654321', faxNum='34857593'}
+
+Shipping Method Selected is: Next Day Air (0.00)
+
+Payment Method Selected is: Credit Card
+Select expired month:1
+Select expired year: 2024
 ]]></system-out>
   </testcase>
 </testsuite>

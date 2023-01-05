@@ -12,7 +12,6 @@ import tests.tricentis.BaseTest;
 import url.Urls;
 
 public class BuyingStandardComputerTest extends BaseTest {
-
     @Test(dataProvider = "computerData")
     public void testStandardComputerBuying(ComputerData computerData) throws InterruptedException {
         driver.get(Urls.BASE_URL.concat("/build-your-own-computer"));
@@ -25,7 +24,7 @@ public class BuyingStandardComputerTest extends BaseTest {
         orderComputerFlow.inputBillingAddress();
         orderComputerFlow.inputShippingAddress();
         orderComputerFlow.selectShippingMethod();
-        orderComputerFlow.selectPaymentMethod(PaymentMethodType.COD);
+        orderComputerFlow.selectPaymentMethod(PaymentMethodType.CREDIT_CARD);
         orderComputerFlow.inputPaymentInfo(CreditCardType.VISA);
         orderComputerFlow.confirmAndVerifyOrder();
     }

@@ -27,6 +27,8 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
     private int quantity = 1;
     private double totalItemPrice;
 
+    String shippingMethodSelected;
+    String paymentMethodSelected="kkk";
     private UserDataObject defaultCheckoutUser;
 
     public OrderComputerFlow(WebDriver driver, Class<T> computerEssentialsComponent, ComputerData computerData) {
@@ -119,7 +121,7 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
         TotalComponent totalComponent = shoppingCartPage.totalComp();
         Map<String, Double> priceCategorized = totalComponent.priceCategorized();
 
-        System.out.println("############# Checkout Price ############");
+        System.out.println("\n############# Checkout Price ############");
         System.out.println("Price Categorized: " + priceCategorized);
 
         /*verification points
@@ -140,9 +142,9 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
                 checkoutOtherFees += priceValue;
             }
         }
-        System.out.println("SubTotal: " + checkoutSubTotal);
-        System.out.println("OtherFees: " + checkoutOtherFees);
-        System.out.println("Total: " + checkoutTotal);
+        System.out.println("\tSubTotal: " + checkoutSubTotal);
+        System.out.println("\tOtherFees: " + checkoutOtherFees);
+        System.out.println("\tTotal: " + checkoutTotal);
 
         Assert.assertEquals(allSubTotal, checkoutSubTotal, "[ERR] Checking out Sub Total price is incorrect!");
         Assert.assertEquals((checkoutSubTotal + checkoutOtherFees), checkoutTotal, "[ERR] Checking out Total price is incorrect!");
@@ -196,37 +198,39 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
     }
 
     @Step("Input Shipping Method")
-    public void selectShippingMethod() {
+    public String selectShippingMethod() {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         ShippingMethodComponent shippingMethodComp = checkoutPage.shippingMethodComponent();
 
         List<String> shippingMethodList = new ArrayList<>(Arrays.asList("Ground", "Next Day Air", "2nd Day Air "));
         int randomIndex = new SecureRandom().nextInt(shippingMethodList.size());
         String randomMethod = shippingMethodList.get(randomIndex);
-
-        shippingMethodComp.selectShippingMethod(randomMethod);
+        shippingMethodSelected = shippingMethodComp.selectShippingMethod(randomMethod);
+        System.out.println("\nShipping Method Selected is: " + shippingMethodSelected);
         shippingMethodComp.clickOnContinueBtn();
+        return shippingMethodSelected;
     }
-
     @Step("Select Payment method")
-    public void selectPaymentMethod(PaymentMethodType paymentMethodType) {
+    public String selectPaymentMethod(PaymentMethodType paymentMethodType) {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         PaymentMethodComponent paymentMethodComp = checkoutPage.paymentMethodComponent();
         switch (paymentMethodType) {
             case CHECK_MONEY_ORDER:
-                paymentMethodComp.selectCheckMoneyOrderMethod();
+                paymentMethodSelected = paymentMethodComp.selectCheckMoneyOrderMethod();
                 break;
             case CREDIT_CARD:
-                paymentMethodComp.selectCreditCardMethod();
+                paymentMethodSelected = paymentMethodComp.selectCreditCardMethod();
                 break;
             case PURCHASE_ORDER:
-                paymentMethodComp.selectPurchaseOrder();
+                paymentMethodSelected = paymentMethodComp.selectPurchaseOrder();
                 break;
             default:
-                paymentMethodComp.selectCODMethod();
+                paymentMethodSelected = paymentMethodComp.selectCODMethod();
                 break;
         }
+        System.out.println("\nPayment Method Selected is: "+paymentMethodSelected);
         paymentMethodComp.clickOnContinueBtn();
+        return paymentMethodSelected;
     }
 
     @Step("Input Payment Information")
@@ -247,7 +251,7 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
             int month = calendar.get(Calendar.MONTH) + 1;
             int year = calendar.get(Calendar.YEAR) + 1;
 
-            System.out.println("Select expired month:" + month +"\n" + "Select expired year: " +year);
+            System.out.println("Select expired month:" + month + "\n" + "Select expired year: " + year);
             paymentInformationComp.selectExpiredMoth(String.valueOf(month));
             paymentInformationComp.selectExpiredYear(String.valueOf(year));
 
@@ -260,6 +264,15 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
     public void confirmAndVerifyOrder() {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         ConfirmOrderComponent confirmOrderComp = checkoutPage.confirmOrderComponent();
+
+        //TODO: Add some verification methods
+        confirmOrderComp.verifyBillingAddressInfo();
+        confirmOrderComp.verifyShippingAddressInfo();
+
+        // Assertion for Shipping Method & Payment Method
+        // Actual vs Expected result need to compare at runtime
+        Assert.assertTrue(shippingMethodSelected.contains(confirmOrderComp.actualShippingMethod()));
+        Assert.assertTrue(paymentMethodSelected.contains(confirmOrderComp.actualPaymentMethod()));
         confirmOrderComp.clickOnConfirmBtn();
 
         new CheckoutCompletedPage(driver).clickOnContinueBtn();

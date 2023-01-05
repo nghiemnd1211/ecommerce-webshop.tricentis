@@ -5,6 +5,7 @@ import models.components.ComponentCssSelector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @ComponentCssSelector(value = "#opc-shipping")
 public class ShippingAddressComponent extends Component {
@@ -14,6 +15,8 @@ public class ShippingAddressComponent extends Component {
         super(driver, component);
     }
     public void clickOnContinueBtn(){
-        findElement(continueBtnSel).click();
+        WebElement continueBtnElem = findElement(continueBtnSel);
+        continueBtnElem.click();
+        wait.until(ExpectedConditions.invisibilityOf(continueBtnElem));
     }
 }

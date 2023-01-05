@@ -5,6 +5,7 @@ import models.components.ComponentCssSelector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @ComponentCssSelector(value = "#opc-shipping_method")
 public class ShippingMethodComponent extends Component {
@@ -14,13 +15,15 @@ public class ShippingMethodComponent extends Component {
         super(driver, component);
     }
 
-    public void selectShippingMethod(String shippingMethod) {
+    public String selectShippingMethod(String shippingMethod) {
         By shippingMethodSel = By.xpath("//label[contains(text()," + "\"" + shippingMethod + "\")]");
         WebElement shippingMethodElem = findElement(shippingMethodSel);
         shippingMethodElem.click();
+        return shippingMethodElem.getText();
     }
-
     public void clickOnContinueBtn() {
-        findElement(continueBtnSel).click();
+        WebElement continueBtnElem = findElement(continueBtnSel);
+        continueBtnElem.click();
+        wait.until(ExpectedConditions.invisibilityOf(continueBtnElem));
     }
 }

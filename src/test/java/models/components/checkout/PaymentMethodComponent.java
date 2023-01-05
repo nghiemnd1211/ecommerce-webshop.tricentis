@@ -5,34 +5,44 @@ import models.components.ComponentCssSelector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 @ComponentCssSelector(value = "#opc-payment_method")
 public class PaymentMethodComponent extends Component {
-    private static final By codSel = By.cssSelector("input[value='Payments.CashOnDelivery']");
-    private static final By checkMoneyOrderSel = By.cssSelector("input[value='Payments.CheckMoneyOrder']");
-    private static final By creditCardSel = By.cssSelector("input[value='Payments.Manual']");
-//    private static final By creditCardSel = By.xpath("//label[contains(text(),'Credit Card')]");
-    private static final By purchaseOrderSel = By.cssSelector("input[value='Payments.PurchaseOrder']");
+    private static final By codSel = By.xpath("//label[contains(text(),'Cash On Delivery')]");
+    private static final By checkMoneyOrderSel = By.xpath("//label[contains(text(),'Check / Money Order')]");
+    private static final By creditCardSel = By.xpath("//label[contains(text(),'Credit Card')]");
+    private static final By purchaseOrderSel = By.xpath("//label[contains(text(),'Purchase Order')]");
     private final static By continueBtnSel = By.cssSelector(".payment-method-next-step-button");
 
     public PaymentMethodComponent(WebDriver driver, WebElement component) {
         super(driver, component);
     }
 
-    public void selectCODMethod() {
-        findElement(codSel).click();
+    public String selectCODMethod() {
+        WebElement codElem = findElement(codSel);
+        codElem.click();
+        return codElem.getText();
     }
-    public void selectCheckMoneyOrderMethod(){
-        findElement(checkMoneyOrderSel).click();
+    public String selectCheckMoneyOrderMethod(){
+        WebElement checkMoneyOrderElem = findElement(checkMoneyOrderSel);
+        checkMoneyOrderElem.click();
+        return checkMoneyOrderElem.getText();
     }
-    public void selectCreditCardMethod(){
-        findElement(creditCardSel).click();
+    public String selectCreditCardMethod(){
+        WebElement creditCardElem = findElement(creditCardSel);
+        creditCardElem.click();
+        return creditCardElem.getText();
     }
-    public void selectPurchaseOrder(){
-        findElement(purchaseOrderSel).click();
+    public String selectPurchaseOrder(){
+        WebElement checkMoneyOrderElem = findElement(purchaseOrderSel);
+        checkMoneyOrderElem.click();
+        return checkMoneyOrderElem.getText();
     }
     public void clickOnContinueBtn() {
-        findElement(continueBtnSel).click();
+        WebElement continueBtnElem = findElement(continueBtnSel);
+        continueBtnElem.click();
+        wait.until(ExpectedConditions.invisibilityOf(continueBtnElem));
     }
 
 }

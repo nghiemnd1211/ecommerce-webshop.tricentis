@@ -22,6 +22,7 @@ C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\pages\t
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\components\cart\TotalComponent.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\utils\ExcelReaderUtils.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\pages\herokuDemo\LoginPage.java
+C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\pages\tricentis\CheckoutCompletedPage.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\components\order\ComputerEssentialsComponent.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\apilearning\IframeHandling.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\utils\PageController.java
@@ -42,6 +43,7 @@ C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\url\Urls.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\components\global\footer\FooterColumnComponent.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\apilearning\JSAlert.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\components\order\CheapComputerComponent.java
+C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\test_data\CreditCardType.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\apilearning\JsExecutor.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\test_data\computer\ComputerData.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\apilearning\CheckboxHandling.java
@@ -57,6 +59,7 @@ C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\apilearning\Mo
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\pages\tricentis\ComputerItemDetailsPage.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\components\order\BaseItemDetailsComponent.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\components\checkout\ShippingMethodComponent.java
+C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\test_data\PaymentMethodType.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\pages\tricentis\CheckoutPage.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\test_data\UserData\UserDataObject.java
 C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\java\models\components\knowledgepractice\GenericType\InternalLoginPage.java

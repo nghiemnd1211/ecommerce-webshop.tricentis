@@ -1,3 +1,4 @@
+models\components\checkout\PaymentInformationComponent$1.class
 test_data\DataObjectBuilder.class
 apilearning\LoginForm.class
 tests\tricentis\order\BuyingStandardComputerTest.class
@@ -8,6 +9,7 @@ models\components\order\BaseItemDetailsComponent.class
 test_data\UserData\UserDataObject.class
 models\components\cart\CartItemRowComponent.class
 models\components\global\footer\FooterComponent.class
+test_flows\order_flow\OrderComputerFlow$1.class
 tests\tricentis\footer\FooterTest.class
 models\components\Component.class
 apilearning\MouseHover.class
@@ -30,8 +32,10 @@ tests\tricentis\order\BuyingCheapComputerTest.class
 models\components\global\footer\MyAccountColumn.class
 apilearning\LaunchBrowser.class
 models\components\global\footer\FooterColumnComponent.class
+models\pages\tricentis\CheckoutCompletedPage.class
 apilearning\CheckboxHandling.class
 models\components\global\footer\FollowUsColumn.class
+test_data\PaymentMethodType.class
 apilearning\IframeHandling.class
 test_flows\global\footer\FooterTestFlow.class
 models\components\knowledgepractice\GenericType\ExternalLoginPage.class
@@ -39,6 +43,7 @@ test_flows\order_flow\OrderComputerFlow.class
 models\components\global\header\HeaderComponent.class
 models\components\checkout\ConfirmOrderComponent.class
 url\Urls.class
+test_data\CreditCardType.class
 models\components\knowledgepractice\GenericType\LoginPage.class
 utils\ExcelReader.class
 models\components\global\TopMenuComponent.class

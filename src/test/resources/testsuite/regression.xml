@@ -8,10 +8,10 @@
             <class name="tests.tricentis.order.BuyingCheapComputerTest"></class>
         </classes>
     </test>
-    <test name="Footer Page Test" parallel="tests" thread-count="10">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="tests.tricentis.footer.FooterTest"></class>
-        </classes>
-    </test>
+<!--    <test name="Footer Page Test" parallel="tests" thread-count="10">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.tricentis.footer.FooterTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

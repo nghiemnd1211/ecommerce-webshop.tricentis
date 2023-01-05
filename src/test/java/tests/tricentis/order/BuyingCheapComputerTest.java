@@ -25,7 +25,7 @@ public class BuyingCheapComputerTest extends BaseTest {
         orderComputerFlow.inputBillingAddress();
         orderComputerFlow.inputShippingAddress();
         orderComputerFlow.selectShippingMethod();
-        orderComputerFlow.selectPaymentMethod(PaymentMethodType.CHECK_MONEY_ORDER);
+        orderComputerFlow.selectPaymentMethod(PaymentMethodType.CREDIT_CARD);
         orderComputerFlow.inputPaymentInfo(CreditCardType.VISA);
         orderComputerFlow.confirmAndVerifyOrder();
     }
