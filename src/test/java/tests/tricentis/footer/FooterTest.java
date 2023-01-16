@@ -3,14 +3,14 @@ package tests.tricentis.footer;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import test_flows.global.footer.FooterTestFlow;
+import tests.tricentis.BaseTest;
 import url.Urls;
-import utils.DriverFactory;
 
 
-public class FooterTest {
+public class FooterTest extends BaseTest {
     @Test
     public void testFooterHomePage() {
-        WebDriver driver = DriverFactory.getChromeDriver();
+        WebDriver driver = getDriver();
         try {
             driver.get(Urls.BASE_URL);
             FooterTestFlow footerTestFlow = new FooterTestFlow(driver);
@@ -25,7 +25,7 @@ public class FooterTest {
 
     @Test
     public void testFooterCategoryPage() {
-        WebDriver driver = DriverFactory.getChromeDriver();
+        WebDriver driver = getDriver();
         try {
             driver.get(Urls.BASE_URL);
 
@@ -38,7 +38,7 @@ public class FooterTest {
 
     @Test
     public void testFooterLoginPage() {
-        WebDriver driver = DriverFactory.getChromeDriver();
+        WebDriver driver = getDriver();
         try {
             driver.get(Urls.BASE_URL);
 

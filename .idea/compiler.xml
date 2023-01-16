@@ -10,6 +10,7 @@
         <module name="Selenium-Starting" />
         <module name="sdet-demowebshop-tricentis" />
         <module name="Java-with-Selenium-for-Test" />
+        <module name="ecommerce-webshop.tricentis" />
       </profile>
     </annotationProcessing>
   </component>

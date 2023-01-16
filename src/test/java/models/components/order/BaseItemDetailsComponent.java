@@ -1,5 +1,6 @@
 package models.components.order;
 
+import io.qameta.allure.Step;
 import models.components.Component;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +19,7 @@ public class BaseItemDetailsComponent extends Component {
         String productPriceText = component.findElement(basePriceSel).getText().trim();
         return Double.parseDouble(productPriceText);
     }
-
+    @Step("Input Quantity")
     public void inputQuantity(int quantity){
         WebElement quantityElem = findElement(inputQuantitySel);
         quantityElem.clear();

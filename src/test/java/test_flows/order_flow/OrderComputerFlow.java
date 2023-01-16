@@ -28,7 +28,7 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
     private double totalItemPrice;
 
     String shippingMethodSelected;
-    String paymentMethodSelected="kkk";
+    String paymentMethodSelected = "showIfFailed";
     private UserDataObject defaultCheckoutUser;
 
     public OrderComputerFlow(WebDriver driver, Class<T> computerEssentialsComponent, ComputerData computerData) {
@@ -210,6 +210,7 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
         shippingMethodComp.clickOnContinueBtn();
         return shippingMethodSelected;
     }
+
     @Step("Select Payment method")
     public String selectPaymentMethod(PaymentMethodType paymentMethodType) {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
@@ -228,7 +229,7 @@ public class OrderComputerFlow<T extends ComputerEssentialsComponent> {
                 paymentMethodSelected = paymentMethodComp.selectCODMethod();
                 break;
         }
-        System.out.println("\nPayment Method Selected is: "+paymentMethodSelected);
+        System.out.println("\nPayment Method Selected is: " + paymentMethodSelected);
         paymentMethodComp.clickOnContinueBtn();
         return paymentMethodSelected;
     }

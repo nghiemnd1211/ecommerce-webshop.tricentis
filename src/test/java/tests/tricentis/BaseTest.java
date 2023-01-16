@@ -10,6 +10,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import utils.DriverFactory;
 
 import java.io.File;
@@ -17,23 +18,32 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.util.*;
 
 public class BaseTest {
-    protected static WebDriver driver;
+    private final static List<DriverFactory> webDriverThreadPool = Collections.synchronizedList(new ArrayList<>());
+    private static ThreadLocal<DriverFactory> driverThread;
+    private static WebDriver driver;
+    private String browserName;
+
+    protected WebDriver getDriver() {
+        return driverThread.get().getDriver(browserName);
+    }
 
     @BeforeTest
-    public void initBrowserSession() {
-        driver = DriverFactory.getChromeDriver();
-
+    @Parameters({"browser"})
+    public void initBrowserSession(String browserName) {
+        this.browserName = browserName;
+        driverThread = ThreadLocal.withInitial(() -> {
+            DriverFactory webDriverThread = new DriverFactory();
+            webDriverThreadPool.add(webDriverThread);
+            return webDriverThread;
+        });
     }
 
     @AfterTest(alwaysRun = true)
     public void closeBrowserSession() {
-        if (driver != null) {
-            driver.quit();
-        }
+        driverThread.get().closeBrowserSession();
     }
 
     @AfterMethod
@@ -47,7 +57,7 @@ public class BaseTest {
             //2. Get Taken time
             Calendar calendar = new GregorianCalendar();
             int y = calendar.get(Calendar.YEAR);
-            int m = calendar.get(Calendar.MONTH);
+            int m = calendar.get(Calendar.MONTH + 1);
             int d = calendar.get(Calendar.DATE);
             int hour = calendar.get(Calendar.HOUR_OF_DAY);
             int min = calendar.get(Calendar.MINUTE);
@@ -57,7 +67,7 @@ public class BaseTest {
             String fileName = methodName + "-" + y + "-" + m + "-" + d + "-" + hour + "-" + min + "-" + second + ".png";
 
             //3. Take screenshot
-            File screenshotBase64Data = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            File screenshotBase64Data = ((TakesScreenshot) driverThread.get().getDriver(browserName)).getScreenshotAs(OutputType.FILE);
 
             try {
                 //4. Save

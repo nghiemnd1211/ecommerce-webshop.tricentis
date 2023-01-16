@@ -1,6 +1,7 @@
 package tests.tricentis.order;
 
 import models.components.order.StandardComputerComponent;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import test_data.CreditCardType;
@@ -13,7 +14,9 @@ import url.Urls;
 
 public class BuyingStandardComputerTest extends BaseTest {
     @Test(dataProvider = "computerData")
+    //@Parameters({"browser"})
     public void testStandardComputerBuying(ComputerData computerData) throws InterruptedException {
+        WebDriver driver = getDriver();
         driver.get(Urls.BASE_URL.concat("/build-your-own-computer"));
         OrderComputerFlow<StandardComputerComponent> orderComputerFlow
                 = new OrderComputerFlow<>(driver, StandardComputerComponent.class,computerData);

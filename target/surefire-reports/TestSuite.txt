@@ -1,4 +1,59 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 253.751 s - in TestSuite
+Tests run: 8, Failures: 5, Errors: 0, Skipped: 2, Time elapsed: 9.32 s <<< FAILURE! - in TestSuite
+tests.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying[ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}](1)  Time elapsed: 4.998 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=109.0.5414.74)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [073080ac593927b27d0f0a400f24e1e3, get {url=https://demowebshop.tricentis.com//build-your-cheap-own-computer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55433/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 073080ac593927b27d0f0a400f24e1e3
+	at tests.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying(BuyingCheapComputerTest.java:20)
+
+tests.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying[ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'}](2)  Time elapsed: 0.16 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=109.0.5414.74)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [073080ac593927b27d0f0a400f24e1e3, get {url=https://demowebshop.tricentis.com//build-your-cheap-own-computer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55433/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 073080ac593927b27d0f0a400f24e1e3
+	at tests.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying(BuyingCheapComputerTest.java:20)
+
+tests.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying[ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite'}](3)  Time elapsed: 0.142 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=109.0.5414.74)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [073080ac593927b27d0f0a400f24e1e3, get {url=https://demowebshop.tricentis.com//build-your-cheap-own-computer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55433/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 073080ac593927b27d0f0a400f24e1e3
+	at tests.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying(BuyingCheapComputerTest.java:20)
+
+tests.tricentis.footer.FooterTest.testFooterHomePage  Time elapsed: 0.007 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55433/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at tests.tricentis.footer.FooterTest.testFooterHomePage(FooterTest.java:13)
+
+tests.tricentis.footer.FooterTest.captureScreenshot[[TestResult name=testFooterHomePage status=FAILURE method=FooterTest.testFooterHomePage()[pri:0, instance:tests.tricentis.footer.FooterTest@1c025cb] output={null}]](0)  Time elapsed: 0.025 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55433/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+

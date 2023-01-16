@@ -1,5 +1,6 @@
 package models.components.order;
 
+import io.qameta.allure.Step;
 import models.components.ComponentCssSelector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +18,7 @@ public class StandardComputerComponent extends ComputerEssentialsComponent {
         super(driver, component);
     }
 
+    @Step("Select Processor Type with {type}")
     @Override
     public String selectProcessorType(String type) {
         final int PROCESSOR_DROPDOWN_INDEX = 0;
@@ -25,6 +27,7 @@ public class StandardComputerComponent extends ComputerEssentialsComponent {
         return selectOption(processorDropdownElem);
     }
 
+    @Step("Select RAM Type with {type}")
     @Override
     public String selectRAMType(String type) {
         final int RAM_DROPDOWN_INDEX = 1;

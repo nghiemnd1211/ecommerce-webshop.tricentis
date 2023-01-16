@@ -58,7 +58,7 @@ public class Component {
         try {
             constructor = componentClass.getConstructor(params);
         } catch (Exception e) {
-            throw new IllegalArgumentException("Component MUST have constructor with params: " + Arrays.toString(params));
+            throw new IllegalArgumentException("[ERR] The component MUST have constructor with params: " + Arrays.toString(params));
         }
 
         // Find element and convert to component

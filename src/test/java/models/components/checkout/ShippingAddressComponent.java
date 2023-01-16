@@ -16,6 +16,7 @@ public class ShippingAddressComponent extends Component {
     }
     public void clickOnContinueBtn(){
         WebElement continueBtnElem = findElement(continueBtnSel);
+        wait.until(ExpectedConditions.elementToBeClickable(continueBtnElem));
         continueBtnElem.click();
         wait.until(ExpectedConditions.invisibilityOf(continueBtnElem));
     }

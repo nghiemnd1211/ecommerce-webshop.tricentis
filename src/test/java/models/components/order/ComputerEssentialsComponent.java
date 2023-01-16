@@ -1,5 +1,6 @@
 package models.components.order;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +10,6 @@ import java.util.List;
 public abstract class ComputerEssentialsComponent extends BaseItemDetailsComponent {
     private static final By allOptionSel = By.cssSelector(".option-list input");
     private static final By addToCartBtnSel = By.cssSelector("[id^='add-to-cart-button']");
-
 
     public ComputerEssentialsComponent(WebDriver driver, WebElement component) {
         super(driver, component);
@@ -23,11 +23,13 @@ public abstract class ComputerEssentialsComponent extends BaseItemDetailsCompone
         return selectComputerOption(type);
     }
 
+    @Step("Select Software with {type}")
     //Only for cheap computer
     public String selectSoftware(String type) {
         return selectComputerOption(type);
     }
 
+    @Step("Select OS Type with {type}")
     //Only for standard computer
     public String selectOSType(String type) {
         return selectComputerOption(type);
@@ -57,7 +59,8 @@ public abstract class ComputerEssentialsComponent extends BaseItemDetailsCompone
             return optionElem.getText();
         } else throw new RuntimeException("[ERR] The option: " + type + " is not existing");
     }
-    public void clickOnAddToCartBtn(){
+
+    public void clickOnAddToCartBtn() {
         findElement(addToCartBtnSel).click();
     }
 }

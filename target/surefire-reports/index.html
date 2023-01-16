@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Regression" class="navigator-link">
-              <span class="suite-name border-passed">Regression</span>
+              <span class="suite-name border-failed">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Regression" class="navigator-link ">
-                    <span>C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\resources\testsuite\regression.xml</span>
+                    <span>C:\Users\PC\IdeaProjects\ecommerce-webshop.tricentis\src\test\resources\testsuite\regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">9 methods, 7 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;8 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Image Viever&#039;})">testCheapComputerBuying(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;2 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Other Office Suite...)">testCheapComputerBuying(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;4 GB&#039;, os=&#039;null&#039;, hdd=&#039;400 GB&#039;, software=&#039;Office Suite&#039;})">testCheapComputerBuying(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.footer.FooterTest" class="method navigator-link" hash-for-method="testFooterHomePage">testFooterHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testStandardComputerBuying(ComputerData{processorType=&#039;2.5GHz&#039;, ram=&#039;4GB&#039;, os=&#039;Windows 7&#039;, hdd=&#039;320 GB&#039;, software=&#039;Acrobat Read...)">testStandardComputerBuying(ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Read...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testStandardComputerBuying(ComputerData{processorType=&#039;2.2GHz&#039;, ram=&#039;8GB&#039;, os=&#039;Ubuntu&#039;, hdd=&#039;400 GB&#039;, software=&#039;Microsoft Offic...)">testStandardComputerBuying(ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Offic...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testStandardComputerBuying(ComputerData{processorType=&#039;2.2GHz&#039;, ram=&#039;2GB&#039;, os=&#039;Windows 10&#039;, hdd=&#039;320 GB&#039;, software=&#039;Total Comma...)">testStandardComputerBuying(ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Comma...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods skipped suite-Regression"> (hide)</a> <!-- hide-methods skipped suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods skipped suite-Regression"> (show)</a> <!-- show-methods skipped suite-Regression -->
+                    </span>
+                    <div class="method-list-content skipped suite-Regression">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.footer.FooterTest" class="method navigator-link" hash-for-method="testFooterLoginPage">testFooterLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Regression -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,32 +161,7 @@
                     <div class="method-list-content passed suite-Regression">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;4 GB&#039;, os=&#039;null&#039;, hdd=&#039;400 GB&#039;, software=&#039;Office Suite&#039;})">testCheapComputerBuying(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;2 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Other Office Suite...)">testCheapComputerBuying(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingCheapComputerTest" class="method navigator-link" hash-for-method="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;8 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Image Viever&#039;})">testCheapComputerBuying(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testStandardComputerBuying(ComputerData{processorType=&#039;2.5GHz&#039;, ram=&#039;4GB&#039;, os=&#039;Windows 7&#039;, hdd=&#039;320 GB&#039;, software=&#039;Acrobat Read...)">testStandardComputerBuying(ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Read...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testStandardComputerBuying(ComputerData{processorType=&#039;2.2GHz&#039;, ram=&#039;8GB&#039;, os=&#039;Ubuntu&#039;, hdd=&#039;400 GB&#039;, software=&#039;Microsoft Offic...)">testStandardComputerBuying(ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Offic...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.order.BuyingStandardComputerTest" class="method navigator-link" hash-for-method="testStandardComputerBuying(ComputerData{processorType=&#039;2.2GHz&#039;, ram=&#039;2GB&#039;, os=&#039;Windows 10&#039;, hdd=&#039;320 GB&#039;, software=&#039;Total Comma...)">testStandardComputerBuying(ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Comma...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression" title="tests.tricentis.footer.FooterTest" class="method navigator-link" hash-for-method="testFooterCategoryPage">testFooterCategoryPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression -->
@@ -143,41 +176,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression" class="panel Regression">
-          <div class="suite-Regression-class-passed">
+          <div class="suite-Regression-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.tricentis.order.BuyingCheapComputerTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;4 GB&#039;, os=&#039;null&#039;, hdd=&#039;400 GB&#039;, software=&#039;Office Suite&#039;})">
-                  </a> <!-- testCheapComputerBuying(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'}) -->
-                  <span class="method-name">testCheapComputerBuying</span>
-                  <span class="parameters">(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;2 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Other Office Suite...)">
-                  </a> <!-- testCheapComputerBuying(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite...) -->
-                  <span class="method-name">testCheapComputerBuying</span>
-                  <span class="parameters">(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite'})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;8 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Image Viever&#039;})">
-                  </a> <!-- testCheapComputerBuying(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}) -->
-                  <span class="method-name">testCheapComputerBuying</span>
-                  <span class="parameters">(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-passed -->
-          <div class="suite-Regression-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.tricentis.order.BuyingStandardComputerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -187,6 +188,30 @@
                   </a> <!-- testStandardComputerBuying(ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Read...) -->
                   <span class="method-name">testStandardComputerBuying</span>
                   <span class="parameters">(ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Reader'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=109.0.5414.74)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [614fe2072240769e545ea4d6535c92ee, get {url=https://demowebshop.tricentis.com//build-your-own-computer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55379/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 614fe2072240769e545ea4d6535c92ee
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at tests.tricentis.order.BuyingStandardComputerTest.testStandardComputerBuying(BuyingStandardComputerTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -195,6 +220,30 @@
                   </a> <!-- testStandardComputerBuying(ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Offic...) -->
                   <span class="method-name">testStandardComputerBuying</span>
                   <span class="parameters">(ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Office'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=109.0.5414.74)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [614fe2072240769e545ea4d6535c92ee, get {url=https://demowebshop.tricentis.com//build-your-own-computer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55379/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 614fe2072240769e545ea4d6535c92ee
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at tests.tricentis.order.BuyingStandardComputerTest.testStandardComputerBuying(BuyingStandardComputerTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -203,6 +252,224 @@
                   </a> <!-- testStandardComputerBuying(ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Comma...) -->
                   <span class="method-name">testStandardComputerBuying</span>
                   <span class="parameters">(ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Commander'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=109.0.5414.74)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [614fe2072240769e545ea4d6535c92ee, get {url=https://demowebshop.tricentis.com//build-your-own-computer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55379/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 614fe2072240769e545ea4d6535c92ee
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at tests.tricentis.order.BuyingStandardComputerTest.testStandardComputerBuying(BuyingStandardComputerTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.tricentis.footer.FooterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFooterHomePage">
+                  </a> <!-- testFooterHomePage -->
+                  <span class="method-name">testFooterHomePage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55379/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
+	at utils.DriverFactory.getDriver(DriverFactory.java:51)
+	at tests.tricentis.BaseTest.getDriver(BaseTest.java:30)
+	at tests.tricentis.footer.FooterTest.testFooterHomePage(FooterTest.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.tricentis.order.BuyingCheapComputerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;8 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Image Viever&#039;})">
+                  </a> <!-- testCheapComputerBuying(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'}) -->
+                  <span class="method-name">testCheapComputerBuying</span>
+                  <span class="parameters">(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=109.0.5414.74)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [614fe2072240769e545ea4d6535c92ee, get {url=https://demowebshop.tricentis.com//build-your-cheap-own-computer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55379/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 614fe2072240769e545ea4d6535c92ee
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at tests.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying(BuyingCheapComputerTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;2 GB&#039;, os=&#039;null&#039;, hdd=&#039;320 GB&#039;, software=&#039;Other Office Suite...)">
+                  </a> <!-- testCheapComputerBuying(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite...) -->
+                  <span class="method-name">testCheapComputerBuying</span>
+                  <span class="parameters">(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=109.0.5414.74)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [614fe2072240769e545ea4d6535c92ee, get {url=https://demowebshop.tricentis.com//build-your-cheap-own-computer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55379/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 614fe2072240769e545ea4d6535c92ee
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at tests.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying(BuyingCheapComputerTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheapComputerBuying(ComputerData{processorType=&#039;Fast&#039;, ram=&#039;4 GB&#039;, os=&#039;null&#039;, hdd=&#039;400 GB&#039;, software=&#039;Office Suite&#039;})">
+                  </a> <!-- testCheapComputerBuying(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'}) -->
+                  <span class="method-name">testCheapComputerBuying</span>
+                  <span class="parameters">(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=109.0.5414.74)
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [614fe2072240769e545ea4d6535c92ee, get {url=https://demowebshop.tricentis.com//build-your-cheap-own-computer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55379/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 614fe2072240769e545ea4d6535c92ee
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at tests.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying(BuyingCheapComputerTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
+          <div class="suite-Regression-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.tricentis.footer.FooterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFooterLoginPage">
+                  </a> <!-- testFooterLoginPage -->
+                  <span class="method-name">testFooterLoginPage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:55379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55379/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
+	at utils.DriverFactory.getDriver(DriverFactory.java:51)
+	at tests.tricentis.BaseTest.captureScreenshot(BaseTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-skipped -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.tricentis.footer.FooterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFooterCategoryPage">
+                  </a> <!-- testFooterCategoryPage -->
+                  <span class="method-name">testFooterCategoryPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,20 +477,21 @@
         </div> <!-- panel Regression -->
         <div panel-name="test-xml-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\PC\IdeaProjects\sdet-demowebshop.tricentis\src\test\resources\testsuite\regression.xml</span>
+            <span class="header-content">C:\Users\PC\IdeaProjects\ecommerce-webshop.tricentis\src\test\resources\testsuite\regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Regression&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Buying Computer Test&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;tests&quot; name=&quot;Buying Computer Chrome Test&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.tricentis.order.BuyingStandardComputerTest&quot;/&gt;
       &lt;class name=&quot;tests.tricentis.order.BuyingCheapComputerTest&quot;/&gt;
+      &lt;class name=&quot;tests.tricentis.order.BuyingStandardComputerTest&quot;/&gt;
+      &lt;class name=&quot;tests.tricentis.footer.FooterTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Buying Computer Test --&gt;
+  &lt;/test&gt; &lt;!-- Buying Computer Chrome Test --&gt;
 &lt;/suite&gt; &lt;!-- Regression --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,7 +503,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Buying Computer Test (2 classes)</span>
+                <span class="test-name">Buying Computer Chrome Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -261,36 +529,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testStandardComputerBuying')
-data.setCell(0, 2, 'tests.tricentis.order.BuyingStandardComputerTest')
-data.setCell(0, 3, 61072);
+data.setCell(0, 1, 'testCheapComputerBuying')
+data.setCell(0, 2, 'tests.tricentis.order.BuyingCheapComputerTest')
+data.setCell(0, 3, 5277);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testStandardComputerBuying')
-data.setCell(1, 2, 'tests.tricentis.order.BuyingStandardComputerTest')
-data.setCell(1, 3, 42327);
+data.setCell(1, 1, 'testFooterCategoryPage')
+data.setCell(1, 2, 'tests.tricentis.footer.FooterTest')
+data.setCell(1, 3, 837);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCheapComputerBuying')
-data.setCell(2, 2, 'tests.tricentis.order.BuyingCheapComputerTest')
-data.setCell(2, 3, 40025);
+data.setCell(2, 1, 'testStandardComputerBuying')
+data.setCell(2, 2, 'tests.tricentis.order.BuyingStandardComputerTest')
+data.setCell(2, 3, 169);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testStandardComputerBuying')
-data.setCell(3, 2, 'tests.tricentis.order.BuyingStandardComputerTest')
-data.setCell(3, 3, 37485);
+data.setCell(3, 1, 'testCheapComputerBuying')
+data.setCell(3, 2, 'tests.tricentis.order.BuyingCheapComputerTest')
+data.setCell(3, 3, 161);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCheapComputerBuying')
-data.setCell(4, 2, 'tests.tricentis.order.BuyingCheapComputerTest')
-data.setCell(4, 3, 31647);
+data.setCell(4, 1, 'testStandardComputerBuying')
+data.setCell(4, 2, 'tests.tricentis.order.BuyingStandardComputerTest')
+data.setCell(4, 3, 146);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testCheapComputerBuying')
 data.setCell(5, 2, 'tests.tricentis.order.BuyingCheapComputerTest')
-data.setCell(5, 3, 29055);
+data.setCell(5, 3, 140);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testStandardComputerBuying')
+data.setCell(6, 2, 'tests.tricentis.order.BuyingStandardComputerTest')
+data.setCell(6, 3, 128);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testFooterHomePage')
+data.setCell(7, 2, 'tests.tricentis.footer.FooterTest')
+data.setCell(7, 3, 6);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testFooterLoginPage')
+data.setCell(8, 2, 'tests.tricentis.footer.FooterTest')
+data.setCell(8, 3, 0);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -305,15 +585,24 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.tricentis.order.BuyingCheapComputerTest</span>
+              <span class="ignored-class-name">tests.tricentis.footer.FooterTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeBrowserSession</span>
+                <br/>
                 <span class="ignored-method-name">initBrowserSession</span>
                 <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.tricentis.order.BuyingStandardComputerTest</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">closeBrowserSession</span>
+                <br/>
+                <span class="ignored-method-name">initBrowserSession</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -325,68 +614,111 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.tricentis.order.BuyingStandardComputerTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.tricentis.order.BuyingCheapComputerTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">initBrowserSession</span>
+                <span class="method-name">initBrowserSession(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCheapComputerBuying(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'})</span>
+                <span class="method-start">300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testCheapComputerBuying status=FAILURE method=BuyingCheapComputerTest.testCheapComp...)</span>
+                <span class="method-start">5738 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCheapComputerBuying(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'})</span>
+                <span class="method-start">5939 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testCheapComputerBuying status=FAILURE method=BuyingCheapComputerTest.testCheapComp...)</span>
+                <span class="method-start">6109 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCheapComputerBuying(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite...)</span>
+                <span class="method-start">6299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testCheapComputerBuying status=FAILURE method=BuyingCheapComputerTest.testCheapComp...)</span>
+                <span class="method-start">6446 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.tricentis.order.BuyingStandardComputerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testStandardComputerBuying(ComputerData{processorType='2.2GHz', ram='8GB', os='Ubuntu', hdd='400 GB', software='Microsoft Offic...)</span>
-                <span class="method-start">8300 ms</span>
+                <span class="method-start">6627 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureScreenshot([TestResult name=testStandardComputerBuying status=SUCCESS method=BuyingStandardComputerTest.testSta...)</span>
-                <span class="method-start">69553 ms</span>
+                <span class="method-name">captureScreenshot([TestResult name=testStandardComputerBuying status=FAILURE method=BuyingStandardComputerTest.testSta...)</span>
+                <span class="method-start">6800 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testStandardComputerBuying(ComputerData{processorType='2.5GHz', ram='4GB', os='Windows 7', hdd='320 GB', software='Acrobat Read...)</span>
-                <span class="method-start">69575 ms</span>
+                <span class="method-start">6988 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureScreenshot([TestResult name=testStandardComputerBuying status=SUCCESS method=BuyingStandardComputerTest.testSta...)</span>
-                <span class="method-start">111910 ms</span>
+                <span class="method-name">captureScreenshot([TestResult name=testStandardComputerBuying status=FAILURE method=BuyingStandardComputerTest.testSta...)</span>
+                <span class="method-start">7124 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testStandardComputerBuying(ComputerData{processorType='2.2GHz', ram='2GB', os='Windows 10', hdd='320 GB', software='Total Comma...)</span>
-                <span class="method-start">111913 ms</span>
+                <span class="method-start">7313 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">captureScreenshot([TestResult name=testStandardComputerBuying status=SUCCESS method=BuyingStandardComputerTest.testSta...)</span>
-                <span class="method-start">149401 ms</span>
+                <span class="method-name">captureScreenshot([TestResult name=testStandardComputerBuying status=FAILURE method=BuyingStandardComputerTest.testSta...)</span>
+                <span class="method-start">7464 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.tricentis.footer.FooterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFooterCategoryPage</span>
+                <span class="method-start">7622 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot([TestResult name=testFooterCategoryPage status=SUCCESS method=FooterTest.testFooterCategoryPage()[pr...)</span>
+                <span class="method-start">8463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFooterHomePage</span>
+                <span class="method-start">8473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">captureScreenshot([TestResult name=testFooterHomePage status=FAILURE method=FooterTest.testFooterHomePage()[pri:0, ins...)</span>
+                <span class="method-start">8487 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testFooterLoginPage</span>
+                <span class="method-start">8514 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">captureScreenshot</span>
+                <span class="method-start">8524 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.tricentis.order.BuyingCheapComputerTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testCheapComputerBuying(ComputerData{processorType='Fast', ram='8 GB', os='null', hdd='320 GB', software='Image Viever'})</span>
-                <span class="method-start">149412 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenshot([TestResult name=testCheapComputerBuying status=SUCCESS method=BuyingCheapComputerTest.testCheapComp...)</span>
-                <span class="method-start">189440 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">testCheapComputerBuying(ComputerData{processorType='Fast', ram='4 GB', os='null', hdd='400 GB', software='Office Suite'})</span>
-                <span class="method-start">189443 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenshot([TestResult name=testCheapComputerBuying status=SUCCESS method=BuyingCheapComputerTest.testCheapComp...)</span>
-                <span class="method-start">221091 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">testCheapComputerBuying(ComputerData{processorType='Fast', ram='2 GB', os='null', hdd='320 GB', software='Other Office Suite...)</span>
-                <span class="method-start">221096 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">captureScreenshot([TestResult name=testCheapComputerBuying status=SUCCESS method=BuyingCheapComputerTest.testCheapComp...)</span>
-                <span class="method-start">250153 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.tricentis.order.BuyingStandardComputerTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowserSession</span>
-                <span class="method-start">250156 ms</span>
+                <span class="method-start">8528 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
