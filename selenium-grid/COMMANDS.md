@@ -15,7 +15,7 @@ java -jar -Dwebdriver.<type>.<name>s path/to/selenium/server.jar node --config /
 java -jar -Dwebdriver.gecko.driver=geckodriver -Dwebdriver.chrome.driver=chromedriver selenium-server-4.1.2.jar node --config node_config.json
 
 java -jar -Dwebdriver=chromedriver -Dwebdriver=geckodriver selenium-server-4.7.2.jar node --config node_config.json
-
+java -Dbrowser=chrome -Dhub="http://localhost:4444" -jar target/ecommerce-webshop.tricentis-1.0-SNAPSHOT.jar
 ```
 
 NOTE: on Windows need to specify extension like gecko.exe, chrome.exe

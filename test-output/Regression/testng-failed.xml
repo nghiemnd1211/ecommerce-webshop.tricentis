@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="4" parallel="tests" name="Failed suite [Regression]">
-  <test thread-count="4" parallel="tests" name="Group 3(failed)">
+  <test thread-count="4" parallel="tests" name="Group 4(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="test.tricentis.footer.FooterTest">
@@ -13,6 +13,22 @@
           <include name="testFooterHomePage"/>
         </methods>
       </class> <!-- test.tricentis.footer.FooterTest -->
+      <class name="test.tricentis.order.BuyingStandardComputerTest">
+        <methods>
+          <include name="captureScreenshot"/>
+          <include name="initBrowserSession"/>
+          <include name="closeBrowserSession"/>
+          <include name="testStandardComputerBuying" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.tricentis.order.BuyingStandardComputerTest -->
+      <class name="test.tricentis.order.BuyingCheapComputerTest">
+        <methods>
+          <include name="captureScreenshot"/>
+          <include name="initBrowserSession"/>
+          <include name="closeBrowserSession"/>
+          <include name="testCheapComputerBuying" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.tricentis.order.BuyingCheapComputerTest -->
     </classes>
-  </test> <!-- Group 3(failed) -->
+  </test> <!-- Group 4(failed) -->
 </suite> <!-- Failed suite [Regression] -->

@@ -13,6 +13,6 @@ buildNumber.properties
 allure-*
 screenshots
 src/Lesson_Notes
-src/test/java/apilearning
+src/main/java/apilearning
 src/main/java/programmingConcept
-src/test/java/models/pages/herokuDemo
+src/main/java/models/pages/herokuDemo
