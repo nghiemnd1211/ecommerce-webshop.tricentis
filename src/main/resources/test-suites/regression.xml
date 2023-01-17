@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression" parallel="tests" thread-count="10">
+    <test name="BuyingCheapComputerTest" parallel="tests" thread-count="10">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="test.tricentis.order.BuyingStandardComputerTest"/>
+            <class name="test.tricentis.footer.FooterTest"/>
+        </classes>
+    </test>
+</suite>
