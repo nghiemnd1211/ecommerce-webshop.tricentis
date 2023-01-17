@@ -52,7 +52,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>test.Main</mainClass>
+                            <mainClass>target/ecommerce-webshop.tricentis-1.0-SNAPSHOT.jar</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
