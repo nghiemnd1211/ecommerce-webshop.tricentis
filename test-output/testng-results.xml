@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="13" passed="1" failed="3" skipped="5">
+<testng-results ignored="2" total="11" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-17T22:05:34 ICT" name="Regression" finished-at="2023-01-17T22:05:40 ICT" duration-ms="6762">
+  <suite started-at="2023-01-17T23:20:55 ICT" name="Regression" finished-at="2023-01-17T23:23:53 ICT" duration-ms="178443">
     <groups>
     </groups>
-    <test started-at="2023-01-17T22:05:34 ICT" name="Group 1" finished-at="2023-01-17T22:05:34 ICT" duration-ms="29">
+    <test started-at="2023-01-17T23:20:55 ICT" name="Group 2" finished-at="2023-01-17T23:20:55 ICT" duration-ms="30">
+    </test> <!-- Group 2 -->
+    <test started-at="2023-01-17T23:20:55 ICT" name="Group 1" finished-at="2023-01-17T23:20:55 ICT" duration-ms="30">
     </test> <!-- Group 1 -->
-    <test started-at="2023-01-17T22:05:34 ICT" name="Group 3" finished-at="2023-01-17T22:05:34 ICT" duration-ms="59">
-      <class name="test.tricentis.BaseTest">
-        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.tricentis.BaseTest@157853da]" started-at="2023-01-17T22:05:34 ICT" name="initBrowserSession" finished-at="2023-01-17T22:05:34 ICT" duration-ms="30" status="PASS">
+    <test started-at="2023-01-17T23:20:55 ICT" name="Group 3" finished-at="2023-01-17T23:21:06 ICT" duration-ms="11015">
+      <class name="test.tricentis.footer.FooterTest">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.tricentis.footer.FooterTest@343570b7]" started-at="2023-01-17T23:20:55 ICT" name="initBrowserSession" finished-at="2023-01-17T23:20:55 ICT" duration-ms="34" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,17 +22,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowserSession -->
-        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.tricentis.BaseTest@157853da]" started-at="2023-01-17T22:05:34 ICT" name="closeBrowserSession" finished-at="2023-01-17T22:05:34 ICT" duration-ms="2" status="PASS">
+        <test-method signature="testFooterCategoryPage()[pri:0, instance:test.tricentis.footer.FooterTest@343570b7]" started-at="2023-01-17T23:20:55 ICT" name="testFooterCategoryPage" finished-at="2023-01-17T23:21:06 ICT" duration-ms="10836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFooterCategoryPage -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.footer.FooterTest@343570b7]" started-at="2023-01-17T23:21:06 ICT" name="captureScreenshot" finished-at="2023-01-17T23:21:06 ICT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFooterCategoryPage status=SUCCESS method=FooterTest.testFooterCategoryPage()[pri:0, instance:test.tricentis.footer.FooterTest@343570b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testFooterHomePage()[pri:0, instance:test.tricentis.footer.FooterTest@343570b7]" started-at="2023-01-17T23:21:06 ICT" name="testFooterHomePage" finished-at="2023-01-17T23:21:06 ICT" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFooterHomePage -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.footer.FooterTest@343570b7]" started-at="2023-01-17T23:21:06 ICT" name="captureScreenshot" finished-at="2023-01-17T23:21:06 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFooterHomePage status=SUCCESS method=FooterTest.testFooterHomePage()[pri:0, instance:test.tricentis.footer.FooterTest@343570b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method signature="testFooterLoginPage()[pri:0, instance:test.tricentis.footer.FooterTest@343570b7]" started-at="2023-01-17T23:21:06 ICT" name="testFooterLoginPage" finished-at="2023-01-17T23:21:06 ICT" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFooterLoginPage -->
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.footer.FooterTest@343570b7]" started-at="2023-01-17T23:21:06 ICT" name="captureScreenshot" finished-at="2023-01-17T23:21:06 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFooterLoginPage status=SUCCESS method=FooterTest.testFooterLoginPage()[pri:0, instance:test.tricentis.footer.FooterTest@343570b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.tricentis.footer.FooterTest@343570b7]" started-at="2023-01-17T23:21:06 ICT" name="closeBrowserSession" finished-at="2023-01-17T23:21:06 ICT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserSession -->
-      </class> <!-- test.tricentis.BaseTest -->
+      </class> <!-- test.tricentis.footer.FooterTest -->
     </test> <!-- Group 3 -->
-    <test started-at="2023-01-17T22:05:34 ICT" name="Group 2" finished-at="2023-01-17T22:05:34 ICT" duration-ms="29">
-    </test> <!-- Group 2 -->
-    <test started-at="2023-01-17T22:05:34 ICT" name="Group 4" finished-at="2023-01-17T22:05:40 ICT" duration-ms="6762">
+    <test started-at="2023-01-17T23:20:55 ICT" name="Group 4" finished-at="2023-01-17T23:23:53 ICT" duration-ms="178443">
       <class name="test.tricentis.order.BuyingStandardComputerTest">
-        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@7c83dc97]" started-at="2023-01-17T22:05:40 ICT" name="testStandardComputerBuying" data-provider="computerData" finished-at="2023-01-17T22:05:40 ICT" duration-ms="2" status="FAIL">
+        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@fd07cbb]" started-at="2023-01-17T23:22:38 ICT" name="testStandardComputerBuying" data-provider="computerData" finished-at="2023-01-17T23:23:03 ICT" duration-ms="24436" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,127 +83,21 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.getDriver(BaseTest.java:30)
-at test.tricentis.order.BuyingStandardComputerTest.testStandardComputerBuying(BuyingStandardComputerTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@7c83dc97]" started-at="2023-01-17T22:05:40 ICT" name="captureScreenshot" finished-at="2023-01-17T22:05:40 ICT" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@fd07cbb]" started-at="2023-01-17T23:23:03 ICT" name="captureScreenshot" finished-at="2023-01-17T23:23:03 ICT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testStandardComputerBuying status=FAILURE method=BuyingStandardComputerTest.testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@7c83dc97] output={null}]]]>
+                <![CDATA[[TestResult name=testStandardComputerBuying status=SUCCESS method=BuyingStandardComputerTest.testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@fd07cbb] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.captureScreenshot(BaseTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@7c83dc97]" started-at="2023-01-17T22:05:40 ICT" name="testStandardComputerBuying" data-provider="computerData" finished-at="2023-01-17T22:05:40 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@fd07cbb]" started-at="2023-01-17T23:23:03 ICT" name="testStandardComputerBuying" data-provider="computerData" finished-at="2023-01-17T23:23:28 ICT" duration-ms="24924" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -166,69 +105,21 @@ at java.base/java.lang.Thread.run(Thread.java:832)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.captureScreenshot(BaseTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@7c83dc97]" started-at="2023-01-17T22:05:40 ICT" name="captureScreenshot" finished-at="2023-01-17T22:05:40 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@fd07cbb]" started-at="2023-01-17T23:23:28 ICT" name="captureScreenshot" finished-at="2023-01-17T23:23:28 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testStandardComputerBuying status=SUCCESS method=BuyingStandardComputerTest.testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@fd07cbb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@7c83dc97]" started-at="2023-01-17T22:05:40 ICT" name="testStandardComputerBuying" data-provider="computerData" finished-at="2023-01-17T22:05:40 ICT" duration-ms="1" status="SKIP">
+        <test-method signature="testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@fd07cbb]" started-at="2023-01-17T23:23:28 ICT" name="testStandardComputerBuying" data-provider="computerData" finished-at="2023-01-17T23:23:52 ICT" duration-ms="24666" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -236,71 +127,23 @@ at java.base/java.lang.Thread.run(Thread.java:832)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.captureScreenshot(BaseTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStandardComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@7c83dc97]" started-at="2023-01-17T22:05:40 ICT" name="captureScreenshot" finished-at="2023-01-17T22:05:40 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@fd07cbb]" started-at="2023-01-17T23:23:52 ICT" name="captureScreenshot" finished-at="2023-01-17T23:23:52 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testStandardComputerBuying status=SUCCESS method=BuyingStandardComputerTest.testStandardComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingStandardComputerTest@fd07cbb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
       </class> <!-- test.tricentis.order.BuyingStandardComputerTest -->
-      <class name="test.tricentis.footer.FooterTest">
-        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.tricentis.footer.FooterTest@fa36558]" started-at="2023-01-17T22:05:34 ICT" name="initBrowserSession" finished-at="2023-01-17T22:05:34 ICT" duration-ms="28" status="PASS">
+      <class name="test.tricentis.order.BuyingCheapComputerTest">
+        <test-method is-config="true" signature="initBrowserSession(java.lang.String)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b]" started-at="2023-01-17T23:20:55 ICT" name="initBrowserSession" finished-at="2023-01-17T23:20:55 ICT" duration-ms="34" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -311,212 +154,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowserSession -->
-        <test-method signature="testFooterCategoryPage()[pri:0, instance:test.tricentis.footer.FooterTest@fa36558]" started-at="2023-01-17T22:05:34 ICT" name="testFooterCategoryPage" finished-at="2023-01-17T22:05:40 ICT" duration-ms="6535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterCategoryPage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.footer.FooterTest@fa36558]" started-at="2023-01-17T22:05:40 ICT" name="captureScreenshot" finished-at="2023-01-17T22:05:40 ICT" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testFooterCategoryPage status=SUCCESS method=FooterTest.testFooterCategoryPage()[pri:0, instance:test.tricentis.footer.FooterTest@fa36558] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshot -->
-        <test-method signature="testFooterHomePage()[pri:0, instance:test.tricentis.footer.FooterTest@fa36558]" started-at="2023-01-17T22:05:40 ICT" name="testFooterHomePage" finished-at="2023-01-17T22:05:40 ICT" duration-ms="6" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.getDriver(BaseTest.java:30)
-at test.tricentis.footer.FooterTest.testFooterHomePage(FooterTest.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterHomePage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.footer.FooterTest@fa36558]" started-at="2023-01-17T22:05:40 ICT" name="captureScreenshot" finished-at="2023-01-17T22:05:40 ICT" duration-ms="2" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testFooterHomePage status=FAILURE method=FooterTest.testFooterHomePage()[pri:0, instance:test.tricentis.footer.FooterTest@fa36558] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.captureScreenshot(BaseTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshot -->
-        <test-method signature="testFooterLoginPage()[pri:0, instance:test.tricentis.footer.FooterTest@fa36558]" started-at="2023-01-17T22:05:40 ICT" name="testFooterLoginPage" finished-at="2023-01-17T22:05:40 ICT" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.captureScreenshot(BaseTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterLoginPage -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.footer.FooterTest@fa36558]" started-at="2023-01-17T22:05:40 ICT" name="captureScreenshot" finished-at="2023-01-17T22:05:40 ICT" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureScreenshot -->
-        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.tricentis.footer.FooterTest@fa36558]" started-at="2023-01-17T22:05:40 ICT" name="closeBrowserSession" finished-at="2023-01-17T22:05:40 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserSession -->
-      </class> <!-- test.tricentis.footer.FooterTest -->
-      <class name="test.tricentis.order.BuyingCheapComputerTest">
-        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@4470f8a6]" started-at="2023-01-17T22:05:40 ICT" name="testCheapComputerBuying" data-provider="computerData" finished-at="2023-01-17T22:05:40 ICT" duration-ms="2" status="FAIL">
+        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b]" started-at="2023-01-17T23:20:55 ICT" name="testCheapComputerBuying" data-provider="computerData" finished-at="2023-01-17T23:21:45 ICT" duration-ms="50310" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -524,127 +162,21 @@ at java.base/java.lang.Thread.run(Thread.java:832)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.getDriver(BaseTest.java:30)
-at test.tricentis.order.BuyingCheapComputerTest.testCheapComputerBuying(BuyingCheapComputerTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheapComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@4470f8a6]" started-at="2023-01-17T22:05:40 ICT" name="captureScreenshot" finished-at="2023-01-17T22:05:40 ICT" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b]" started-at="2023-01-17T23:21:45 ICT" name="captureScreenshot" finished-at="2023-01-17T23:21:45 ICT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheapComputerBuying status=FAILURE method=BuyingCheapComputerTest.testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@4470f8a6] output={null}]]]>
+                <![CDATA[[TestResult name=testCheapComputerBuying status=SUCCESS method=BuyingCheapComputerTest.testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.captureScreenshot(BaseTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@4470f8a6]" started-at="2023-01-17T22:05:40 ICT" name="testCheapComputerBuying" data-provider="computerData" finished-at="2023-01-17T22:05:40 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b]" started-at="2023-01-17T23:21:45 ICT" name="testCheapComputerBuying" data-provider="computerData" finished-at="2023-01-17T23:22:12 ICT" duration-ms="26919" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -652,69 +184,21 @@ at java.base/java.lang.Thread.run(Thread.java:832)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.captureScreenshot(BaseTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheapComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@4470f8a6]" started-at="2023-01-17T22:05:40 ICT" name="captureScreenshot" finished-at="2023-01-17T22:05:40 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b]" started-at="2023-01-17T23:22:12 ICT" name="captureScreenshot" finished-at="2023-01-17T23:22:12 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheapComputerBuying status=SUCCESS method=BuyingCheapComputerTest.testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
-        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@4470f8a6]" started-at="2023-01-17T22:05:40 ICT" name="testCheapComputerBuying" data-provider="computerData" finished-at="2023-01-17T22:05:40 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b]" started-at="2023-01-17T23:22:12 ICT" name="testCheapComputerBuying" data-provider="computerData" finished-at="2023-01-17T23:22:38 ICT" duration-ms="26093" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -722,68 +206,24 @@ at java.base/java.lang.Thread.run(Thread.java:832)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:57786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57786/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
-at driver.DriverFactory.getDriver(DriverFactory.java:51)
-at test.tricentis.BaseTest.captureScreenshot(BaseTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheapComputerBuying -->
-        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@4470f8a6]" started-at="2023-01-17T22:05:40 ICT" name="captureScreenshot" finished-at="2023-01-17T22:05:40 ICT" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b]" started-at="2023-01-17T23:22:38 ICT" name="captureScreenshot" finished-at="2023-01-17T23:22:38 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheapComputerBuying status=SUCCESS method=BuyingCheapComputerTest.testCheapComputerBuying(test_data.computer.ComputerData)[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureScreenshot -->
+        <test-method is-config="true" signature="closeBrowserSession()[pri:0, instance:test.tricentis.order.BuyingCheapComputerTest@11fc564b]" started-at="2023-01-17T23:23:52 ICT" name="closeBrowserSession" finished-at="2023-01-17T23:23:53 ICT" duration-ms="876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSession -->
       </class> <!-- test.tricentis.order.BuyingCheapComputerTest -->
     </test> <!-- Group 4 -->
   </suite> <!-- Regression -->
