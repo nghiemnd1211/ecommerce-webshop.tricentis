@@ -38,3 +38,14 @@ How to generate the allure report
 + run mvn clean test
 + run  allure generate allure-results
 to directly access to the report --clean
+
+#Timeout Exception vs. No Such Element
+Timeout Exception: the program running to compare element values. 
+Ex: 
+wait.Until(ExpectedConditions.invisibilityOf(driver.findElement(headingSel)));
+or \
+wait.Until(ExpectedConditions.UrlToBe("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier"))
+
+No Such Element:
+Ex:
+wait.Until(ExpectedConditions.visibilityOf(driver.findElement(headingSel)));
